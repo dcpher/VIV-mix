@@ -1,0 +1,95 @@
+// campaign-page
+
+#campaign-qqw
+  #quick-quote
+    margin: 0.55rem 0.55rem
+
+  .benefits-bar.blue 
+    background-color: $color-blue
+    padding: rem-calc(8) rem-calc(47)
+    border-top: 1px solid darken($color-blue, 5)
+    padding-bottom: 0
+    margin-top: rem-calc(20)
+    
+  &.header-panel
+    padding-top: rem-calc(50)
+    padding-bottom: rem-calc(60)
+    padding-left: 0
+    padding-right: 0
+
+    p
+      font-size: rem-calc(32)
+      line-height: 1.3
+      letter-spacing: rem-calc(-1)
+      margin-top: rem-calc(-15)
+    
+
+.campaign-header
+  border-bottom: 1px solid rgba($color-dark-grey, 0.09)
+  h1
+    font-size: rem-calc(98)
+    text-shadow: 1px 1px 1px rgba($color-dark-grey, .3)
+    font-weight: 300
+    line-height: 1.0
+
+@media #{$small-only}
+  #campaign-qqw
+    margin-top: rem-calc(-42)
+  .campaign-header 
+    h1
+      font-size: rem-calc(56)
+      letter-spacing: rem-calc(-2)
+      margin-bottom: rem-calc(12)
+    &#header.header-panel
+      padding-top: rem-calc(25)
+      padding-bottom: rem-calc(120)
+    p
+      font-size: rem-calc(24)
+      line-height: 1.3
+      letter-spacing: rem-calc(-0.5)
+
+
+
+@media #{$medium-only}
+  .campaign-header 
+    h1
+      font-size: rem-calc(70)
+      line-height: 1.0
+      letter-spacing: rem-calc(-4)
+      margin-bottom: rem-calc(18)
+    &#header.header-panel
+      padding-top: rem-calc(80)
+      padding-bottom: rem-calc(80)
+    p
+      font-size: rem-calc(26)
+      line-height: 1.3
+      letter-spacing: rem-calc(-0.5)
+  
+@media #{$large-only}  
+  .campaign-header 
+    h1
+      font-size: rem-calc(92)
+      line-height: 1.0
+      letter-spacing: rem-calc(-5)
+      margin-bottom: rem-calc(18)
+    &#header.header-panel
+      padding-top: rem-calc(90)
+      padding-bottom: rem-calc(90)
+    p
+      font-size: rem-calc(30)
+      line-height: 1.5
+      letter-spacing: rem-calc(-1)
+
+@media #{$xlarge-up}
+  .campaign-header 
+    h1
+      margin-bottom: rem-calc(18)
+    &#header.header-panel
+      padding-top: rem-calc(100)
+      padding-bottom: rem-calc(100)
+    p
+      font-size: rem-calc(34)
+      line-height: 1.6
+      letter-spacing: rem-calc(-1)
+
+  

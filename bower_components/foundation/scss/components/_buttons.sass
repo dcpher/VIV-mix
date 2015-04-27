@@ -1,0 +1,135 @@
+// Extentd Button Styles
+.button, button
+  +border-radius(4px)
+  font-size: rem-calc(20)
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2)
+  cursor: pointer
+  position: relative
+  padding: rem-calc(13) rem-calc(16)
+  padding-right: rem-calc(44)
+  text-align: left
+  
+  &.expand
+    padding: rem-calc(8) rem-calc(16)
+    
+  @media #{$small-only}
+    &.small-expand
+      width: 100%
+  
+  &:after
+    content: '\f061'
+    font: normal normal normal 14px/1 FontAwesome
+    position: absolute
+    bottom: rem-calc(17)
+    right: rem-calc(16)
+  
+  &:hover
+    text-decoration: none
+    text-shadow: 1px 1px 10px rgba($color-dark-grey, 0.2)
+
+  // TID Button colours
+  
+  // Light
+ 
+  &.red
+    +gradient-button(darken($color-red, 5%))
+    &:hover 
+      +gradient-button(darken($color-red, 5%))
+        
+  &.blue
+    +gradient-button($color-blue)
+    &:hover 
+      +gradient-button(darken($color-blue, 5%))
+      
+  &.purple
+    +gradient-button($color-purple)
+    &:hover 
+      +gradient-button(darken($color-purple, 10%))
+         
+  &.teal
+    +gradient-button($color-teal)
+    &:hover 
+      +gradient-button(darken($color-teal, 10%))
+      
+  &.pink
+    +gradient-button($color-pink)
+    &:hover 
+      +gradient-button(darken($color-pink, 10%))
+      
+  &.yellow
+    +gradient-button($color-yellow)
+    &:hover 
+      +gradient-button(darken($color-yellow, 10%))
+      
+      
+  // Dark
+ 
+  &.dark-red
+    +gradient-button(darken($color-dark-red, 5%))
+    &:hover 
+      +gradient-button(darken($color-dark-red, 10%))
+        
+  &.dark-blue
+    +gradient-button($color-dark-blue)
+    &:hover 
+      +gradient-button(darken($color-dark-blue, 10%))
+      
+  &.dark-purple
+    +gradient-button($color-dark-purple)
+    &:hover 
+      +gradient-button(darken($color-dark-purple, 10%))
+         
+  &.dark-teal
+    +gradient-button($color-dark-teal)
+    &:hover 
+      +gradient-button(darken($color-dark-teal, 10%))
+      
+  &.dark-pink
+    +gradient-button($color-dark-pink)
+    &:hover 
+      +gradient-button(darken($color-dark-pink, 10%))
+      
+  &.dark-yellow
+    +gradient-button($color-dark-yellow)
+    &:hover 
+      +gradient-button(darken($color-dark-yellow, 10%))
+      
+  // Additional Button Colours   
+      
+  &.green
+    +gradient-button($color-green)
+    &:hover 
+      +gradient-button(darken($color-green, 10%))
+        
+  &.grey
+    +gradient-button($color-dark-grey)
+    &:hover 
+      +gradient-button(darken($color-dark-grey, 10%))
+        
+  &.light-grey
+    +gradient-button($color-light-grey)
+    color: $color-dark-grey
+    &:hover 
+      +gradient-button(darken($color-light-grey, 10%))
+      
+a
+  &.button
+    +transition
+  &.button:hover
+    text-decoration: none
+
+// TODO: this is my hack to get icon on a submit button
+span
+  &.submit-arw
+    position: relative
+  &.submit-arw:before
+    content: '\f061'
+    font: normal normal normal 14px/1 FontAwesome
+    position: absolute
+    right: rem-calc(20)
+    top: rem-calc(2)
+    color: $color-white
+    
+
+    
+  

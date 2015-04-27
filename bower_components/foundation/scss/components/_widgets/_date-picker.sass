@@ -1,0 +1,85 @@
+// date-picker
+
+
+// Datepicker [not namespaced]
+.datepicker
+  background: $dp-color-background
+  padding: $qqc-gutter
+  border-radius: 3px
+  box-shadow: $dp-box-shadow
+  font-family: $qqc-font-family-heading
+  +qqc-popout-caret
+  .closePanel
+    +qqc-close-button
+  h3
+    +qqc-popout-header
+  .datepicker-calendars
+    overflow: auto
+    position: relative
+  .datepicker-show-past-month,
+  .datepicker-show-next-month
+    position: absolute
+    left: 0
+    top: -10px
+    color: $color-blue
+    font-size: rem-calc(36)
+    &:hover
+      cursor: pointer
+  .datepicker-show-next-month
+    right: 0
+    left: auto
+  .datepicker-calendar
+    float: left
+    display: block
+    &:last-child
+      margin-left: $qqc-gutter
+  .datepicker-calendar-title
+    text-align: center
+    font-size: $dp-font-size-subheading
+    margin-bottom: $qqc-blh
+  
+  table
+    border: none
+    margin-bottom: 0 
+    tr 
+      td, th
+        padding: rem-calc(0)
+        font-size: rem-calc(16)
+        margin-left: 2px
+        a
+          font-size: rem-calc(16)
+          padding: rem-calc(10) rem-calc(10)
+          color: $color-blue
+          display: block
+          text-align: center
+          line-height: 16px
+          @media #{$small-only} 
+            padding: rem-calc(8) rem-calc(8)
+          
+          &:hover
+            color: $color-white
+            text-decoration: none
+            cursor: pointer
+            background-color: $color-blue
+        
+      td.selected
+        background: $color-blue
+        a
+          color: $color-white
+      td.disabled
+        color: $dp-color-link-disabled
+        &:hover
+          text-decoration: none
+      th
+        font-weight: 300
+        text-align: center
+    
+  td.inSelectionRange a,
+  td.selectedCompanion a
+    background: $color-dark-blue
+    color: $color-white
+  @media all and (max-width: $qqc-mq-datepicker-collapse)
+    .datepicker-calendar, h3, .closePanel
+      display: none
+    .datepicker-calendar:nth-child(3)
+      display: block

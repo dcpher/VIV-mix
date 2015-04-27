@@ -1,0 +1,59 @@
+// text-with-img
+
+@media #{$medium-up}
+  ul[class*=block-grid-]
+    margin: 0
+    li
+      &.text-with-img
+        margin-bottom: rem-calc(24)
+        background-repeat: no-repeat
+        
+
+        h4, h5, p, span
+          padding-left: 80px
+          padding-right: rem-calc(16)
+        p
+          margin-bottom: rem-calc(4)
+
+        a
+          &.white
+            color: $color-white
+      
+
+      
+@media #{$small-only}
+  ul[class*=block-grid-]
+    margin: 0
+    li
+      &.text-with-img
+        margin-bottom: rem-calc(16)
+        background-image: url()
+        border-top: 1px solid darken($color-light-grey, 5%)
+        padding-top: rem-calc(10)
+        padding-bottom: rem-calc(10)
+        padding-left: 0
+        padding-right: 0
+        margin-bottom: 0
+
+        h4, h5, p, span
+          padding-left: 0
+          padding-right: 0
+        p
+          margin-bottom: rem-calc(4)
+
+      &.text-with-img:last-child
+        border-bottom: 1px solid darken($color-light-grey, 5%)
+        margin-bottom: rem-calc(32)
+
+        
+          
+@media #{$small-only}
+  .blue-panel
+    ul[class*=block-grid-]
+      margin: 0
+      li
+        &.text-with-img
+          border-top: 1px solid darken($color-blue, 5%)
+        &.text-with-img:last-child
+          border-bottom: 1px solid darken($color-blue, 5%)
+          
