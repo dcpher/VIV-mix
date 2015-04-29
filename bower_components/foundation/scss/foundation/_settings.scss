@@ -116,11 +116,14 @@ $font-weight-bold: 300;
  $oil         : #333333;
  $jet         : #222222;
  $black       : #000000;
- $tid-blue    : #00bae4;
- $tid-dark-blue: #005581;
+
+
+ $viv-blue    : #087099;
+ $viv-dark-blue: #005581;
+ $viv-grey: #4d473b;
 
 // We use these as default colors throughout
-$primary-color: $tid-blue;
+$primary-color: $viv-blue;
 // $secondary-color: #e7e7e7;
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
@@ -260,7 +263,7 @@ $global-radius: 3px;
 // We use these to style anchors
  $anchor-text-decoration: none;
  $anchor-text-decoration-hover: none;
- $anchor-font-color: $tid-blue;
+ $anchor-font-color: $viv-blue;
  $anchor-font-color-hover: scale-color($anchor-font-color, $lightness: -14%);
 
 // We use these to style the <hr> element
@@ -1358,7 +1361,7 @@ $table-line-height: rem-calc(22);
 
 $has-tip-border-bottom: none;//dotted 1px $iron;
 $has-tip-font-weight: $font-weight-normal;
-$has-tip-font-color: $tid-blue;
+$has-tip-font-color: $viv-blue;
 $has-tip-border-bottom-hover: none; //dotted 1px scale-color($primary-color, $lightness: -55%);
 // $has-tip-font-color-hover: $primary-color;
 // $has-tip-cursor-type: help;
@@ -1384,7 +1387,7 @@ $tooltip-font-color: $tuatara;
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-$topbar-bg-color: $white;
+$topbar-bg-color: rgba($white, 0); //;
 $topbar-bg: $topbar-bg-color;
 
 // Height and margin
@@ -1396,16 +1399,16 @@ $topbar-title-weight: $font-weight-normal;
 $topbar-title-font-size: rem-calc(16);
 
 // Set the link colors and styles for top-level nav
- $topbar-link-color: $tuatara;
+ $topbar-link-color: $white;
  $topbar-link-color-hover: $white;
- $topbar-link-color-active: $tuatara;
- $topbar-link-color-active-hover: $tuatara;
+ $topbar-link-color-active: $white;
+ $topbar-link-color-active-hover: $white;
  $topbar-link-weight: $font-weight-normal;
  $topbar-link-font-size: rem-calc(16);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
 $topbar-link-bg: $topbar-bg;
-$topbar-link-bg-hover: $tuatara;
-$topbar-link-bg-color-hover: $tuatara;
+$topbar-link-bg-hover: darken($viv-grey, 5%);
+$topbar-link-bg-color-hover: darken($viv-grey, 5%);
 //$topbar-link-bg-active: $primary-color;
 //$topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%);
 // $topbar-link-font-family: $body-font-family;
@@ -1417,8 +1420,8 @@ $topbar-link-bg-color-hover: $tuatara;
 // $topbar-button-top: 7px;
 
 // Style the top bar dropdown elements
- $topbar-dropdown-bg: $white;
- $topbar-dropdown-link-color: $tid-blue;
+ $topbar-dropdown-bg: $topbar-bg;
+ $topbar-dropdown-link-color: $viv-blue;
 // $topbar-dropdown-link-color-hover: $topbar-link-color-hover;
 // $topbar-dropdown-link-bg: $oil;
 // $topbar-dropdown-link-bg-hover: $oil;
@@ -1437,8 +1440,8 @@ $topbar-link-bg-color-hover: $tuatara;
 // $topbar-menu-link-transform: uppercase;
 // $topbar-menu-link-font-size: rem-calc(13);
 // $topbar-menu-link-weight: $font-weight-bold;
- $topbar-menu-link-color: $tid-blue;
- $topbar-menu-icon-color: $tid-blue;
+ $topbar-menu-link-color: $viv-blue;
+ $topbar-menu-icon-color: $viv-blue;
 // $topbar-menu-link-color-toggled: $jumbo;
 // $topbar-menu-icon-color-toggled: $jumbo;
 // $topbar-menu-icon-position: $opposite-direction; // Change to $default-float for a left menu icon

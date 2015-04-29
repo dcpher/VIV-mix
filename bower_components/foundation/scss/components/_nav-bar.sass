@@ -1,6 +1,11 @@
 // nav-bar
 
 nav
+  @media #{$medium-up}
+    position: absolute !important
+    top: 0
+    left: 0
+    width: 100%
   
   .logo
     height: 40px
@@ -12,12 +17,12 @@ nav
         &.sign-in
           a
             font-weight: 500
-            color: $color-blue
+            color: $color-white
             
             // set the sign in hover color to blue
             &:not(.button):hover
               color: $color-white
-              background-color: $color-blue
+              background-color: darken($color-dark-green, 5%)
               
         //transition effect for nav buttons
         a

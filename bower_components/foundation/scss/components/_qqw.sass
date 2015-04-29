@@ -90,7 +90,7 @@
   
   h3
     //@extend h4
-    color: $color-dark-blue !important
+    color: $color-white !important
     padding-bottom: rem-calc(8)
     border-bottom: 1px solid $color-white
     
@@ -169,9 +169,9 @@
   // submit button
   .continue
     @include button
-    +gradient-button($color-dark-blue)
+    +gradient-button(darken($color-orange, 5%))
     +border-radius(4px)
-    border: 1px solid darken($color-dark-blue, 5%)
+    border: 1px solid darken($color-orange, 10%)
     width: 100%
     margin-top: rem-calc(16)
     margin-bottom: 0 //rem-calc(16)
@@ -183,9 +183,9 @@
     padding-right: rem-calc(44)
     text-align: left
     &:hover 
-      +gradient-button(darken($color-dark-blue, 5%))
-      border: 1px solid darken($color-dark-blue, 30%)
-      text-shadow: 1px 1px 10px rgba(0, 184, 226, 0.5)
+      +gradient-button(darken($color-orange, 10%))
+      border: 1px solid darken($color-orange, 30%)
+      text-shadow: 1px 1px 10px rgba($color-orange, 0.5)
       
     @media #{$medium-up}
       //margin-top: rem-calc(48)
