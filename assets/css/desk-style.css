@@ -3439,6 +3439,14 @@ h3, h4 {
 h5 {
   font-weight: 300; }
 
+p.highlight {
+  font-size: 1.5rem;
+  line-height: 1.1; }
+p.caption {
+  font-size: 0.875rem;
+  line-height: 1.1;
+  margin-top: 0.625rem; }
+
 h1, h2, h3, h4, h5, div, p, b, span {
   color: #4d473b; }
   h1.blue, h2.blue, h3.blue, h4.blue, h5.blue, div.blue, p.blue, b.blue, span.blue {
@@ -4120,13 +4128,11 @@ nav .top-bar-section ul li a:hover {
 
 #footer {
   margin-bottom: 0;
-  background-color: #4d473b;
-  border: none;
-  border-top: 1px solid rgba(77, 71, 59, 0.09); }
+  background-color: #006266;
+  border: none; }
   #footer .footer-header {
     margin-top: 1rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid #6a6251; }
+    padding-bottom: 1rem; }
     #footer .footer-header .follow-us-on {
       margin-top: 0.625rem;
       padding-left: 0.5rem; }
@@ -4156,8 +4162,7 @@ nav .top-bar-section ul li a:hover {
           margin-top: 1.5rem; } }
   #footer .footer-links {
     margin-top: 2rem;
-    margin-bottom: 2rem;
-    border-bottom: 1px solid #6a6251; }
+    margin-bottom: 2rem; }
     #footer .footer-links ul li {
       font-size: 1rem; }
       #footer .footer-links ul li.title {
@@ -4165,14 +4170,17 @@ nav .top-bar-section ul li a:hover {
         font-size: 1.375rem;
         padding-bottom: 0.5rem; }
       #footer .footer-links ul li a {
-        color: #919191; }
+        color: #84d1c3; }
         #footer .footer-links ul li a:hover {
           text-decoration: none;
           color: #f8f8f8; }
-  #footer .legal {
+
+#footer-legal {
+  background-color: #003b3d; }
+  #footer-legal .legal {
     font-size: 0.75rem;
-    font-weight: 500;
-    color: #5e5e5e; }
+    font-weight: 300;
+    color: #007175; }
 
 hr {
   margin-top: 3.75rem;
