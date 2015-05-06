@@ -2,49 +2,20 @@
   
 .green-panel
   +panel($bg: $color-green, $adjust: true)  
-  
-.dark-green-panel
-  +panel($bg: $color-dark-green, $adjust: true)
-  
+
 .blue-panel
   //@include panel($bg: $color-blue, $adjust: true)  
   +panel($bg: $color-blue, $adjust: true)
-
-.pink-panel
-  +panel($bg: $color-pink, $adjust: true)
-
-.purple-panel
-  +panel($bg: $color-purple, $adjust: true)
   
-.teal-panel
-  +panel($bg: $color-teal, $adjust: true)
-  
-.red-panel
-  +panel($bg: $color-red, $adjust: true)
-  
-.yellow-panel
-  +panel($bg: $color-yellow, $adjust: true)
-  
-
-// Dark panels 
+.dark-green-panel
+  +panel($bg: $color-dark-green, $adjust: true)
 
 .dark-blue-panel
   +panel($bg: $color-dark-blue, $adjust: true)
 
-.dark-pink-panel
-  +panel($bg: $color-dark-pink, $adjust: true)
+.orange-panel
+  +panel($bg: $color-orange, $adjust: true)
 
-.dark-purple-panel
-  +panel($bg: $color-dark-purple, $adjust: true)
-  
-.dark-teal-panel
-  +panel($bg: $color-dark-teal, $adjust: true)
-  
-.dark-red-panel
-  +panel($bg: $color-dark-red, $adjust: true)
-  
-.dark-yellow-panel
-  +panel($bg: $color-dark-yellow, $adjust: true)
   
   
 // Additional Panel colours
@@ -56,3 +27,9 @@
 .dark-grey-panel
   +panel($bg: $color-dark-grey, $adjust: true)
   
+  
+.right-col-panel
+  @media #{$medium-only}
+    h4
+      font-size: rem-calc(24)
+    

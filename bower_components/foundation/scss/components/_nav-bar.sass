@@ -1,7 +1,7 @@
 // nav-bar
 
 nav
-  @media #{$medium-up}
+  @media #{$small-up}
     position: absolute !important
     top: 0
     left: 0
@@ -10,10 +10,25 @@ nav
   .logo
     height: 40px
     width: 154px
-   
-  .top-bar-section
+    
+  .tab-bar-logo
+    margin-left: rem-calc(16px)
+  
+  // menu icon for medium and small  
+  .menu-icon
+    &:hover 
+      background-color: $color-dark-grey 
+      color: $color-white 
+      +transition
+  
+  // Main Nav Styles for large screens
+  .tab-bar-section
+    padding-right: 0
+    
     ul 
       li
+        margin: 0
+      
         &.sign-in
           a
             font-weight: 500
@@ -26,6 +41,9 @@ nav
               
         //transition effect for nav buttons
         a
+          color: $color-white
+          padding: rem-calc(21px) rem-calc(14px)
+          height: rem-calc(65)
           +transition
 
         a:hover 
@@ -38,8 +56,28 @@ nav
           border-bottom: 1px solid darken($color-dark-grey, 5)
           a
             color: $color-white
+      
+    // indent nav bar to allow for offcanvas nav
+    @media #{$medium-only}
+      &.right
+        right: rem-calc(65) 
 
-    // TODO: Do this in the way Foundation would like us to
+// offcanvas styling
+aside.right-off-canvas-menu 
+  .off-canvas-list
+    li
+      margin-bottom: 0
+      &.sign-in
+        font-weight: 500
+      .logo
+        height: 40px
+        width: 154px
+      &:hover 
+        background-color: $color-dark-grey 
+        color: $color-white 
+        +transition
+
+  // TODO: Do this in the way Foundation would like us to
   @media all and (max-width: 780px) and (min-width: 642px)
     &.top-bar section.top-bar-section ul.right li a
       padding: 0 rem-calc(8)

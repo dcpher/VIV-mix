@@ -14,12 +14,19 @@ h5
   
 p
   &.highlight
-    font-size: rem-calc(24)
-    line-height: 1.1
+    font-size: rem-calc(28)
+    line-height: 1.2
   &.caption
     font-size: rem-calc(14)
     line-height: 1.1
     margin-top: rem-calc(10)
+  strong
+    font-weight: 500
+    
+// List styles    
+ul
+  li
+    margin-bottom: rem-calc(12)
   
 // Set font up colours
   
@@ -31,32 +38,10 @@ h1, h2, h3, h4, h5, div, p, b, span
     color: $color-blue
   &.dark-blue
     color: $color-dark-blue
-  
-  &.pink
-    color: $color-pink
-  &.dark-pink
-    color: $color-dark-pink 
-    
   &.red
     color: $color-red
   &.dark-red
     color: $color-dark-red    
-    
-  &.purple
-    color: $color-purple
-  &.dark-purple
-    color: $color-dark-purple     
-    
-  &.teal
-    color: $color-teal
-  &.dark-teal
-    color: $color-dark-teal     
-    
-  &.yellow
-    color: $color-yellow
-  &.dark-yellow
-    color: $color-dark-yellow    
-    
   &.white
     color: $color-white
   
@@ -72,9 +57,9 @@ h1, h2, h3, h4, h5, div, p, b, span
 
 @media #{$xxlarge-up}
   h1
-    font-size: rem-calc(110)
-    line-height: 1.0
-    letter-spacing: rem-calc(-5)
+    //font-size: rem-calc(110)
+    //line-height: 1.0
+    //letter-spacing: rem-calc(-5)
   
 @media #{$small-only}
   h1, h2

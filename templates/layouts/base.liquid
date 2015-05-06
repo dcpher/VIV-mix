@@ -19,29 +19,50 @@
 </head>
 <body>
   
-<nav class="top-bar" data-topbar role="navigation">
-  <ul class="title-area">
-    <li class="name">
-      <h1><a href="#"><img class="logo x2" src="/Media/Default/main/vivamos-logo-inverse.png" /></a></h1>
-    </li>
-     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-  </ul>
+  
+    {% include "header-navigation" %}
+  <div class="off-canvas-wrap" data-offcanvas>
+  <div class="inner-wrap">
+    
+    <nav class="tab-bar">
 
-  <section class="top-bar-section">
-    <!-- Right Nav Section -->
-    <ul class="right">
-      <li class=""><a href="#">Seguro Viagem</a></li>
-      <li class=""><a href="#">Planos e Cobertura</a></li>
-      <li class="hide-for-medium-only"><a href="#">Emergências</a></li>
-      <li class=""><a href="#">Aviso de Sinistro</a></li>
-      <li class=""><a href="#">Contato</a></li>
-      <li class="sign-in"><a href="#">Área do Cliente</a></li>
-    </ul>
-  </section>
-</nav>
-  
-  
+      <section class="left tab-bar-logo">
+         <a href="#"><img class="logo x2" src="/Media/Default/main/vivamos-logo-inverse.png" /></a>
+      </section>
+      
+      <section class="right-small hide-for-large-up">
+        <a class="right-off-canvas-toggle menu-icon" href="#"><span></span></a>
+      </section>
+      
+      <section class="right tab-bar-section show-for-medium-up">
+        <ul class="no-bullet inline-list right">
+          <li class=""><a href="#">Seguro Viagem</a></li>
+          <li class="show-for-large-up"><a href="#">Planos e Cobertura</a></li>
+          <li class="show-for-large-up"><a href="#">Emergências</a></li>
+          <li class="show-for-large-up"><a href="#">Aviso de Sinistro</a></li>
+          <li class=""><a href="#">Contato</a></li>
+          <li class="sign-in"><a href="#">Área do Cliente</a></li>
+        </ul>
+      </section>
+
+
+    </nav>
+
+    <aside class="right-off-canvas-menu">
+      <ul class="off-canvas-list">
+        <li class="text-center"><a href="#"><img class="logo x2" src="/Media/Default/main/vivamos-logo-inverse.png" /></a></li>
+        <li><a href="#">Seguro Viagem</a></li>
+        <li><a href="#">Planos e Cobertura</a></li>
+        <li><a href="#">Emergências</a></li>
+        <li><a href="#">Aviso de Sinistro</a></li>
+        <li><a href="#">Contato</a></li>
+        <li class="sign-in"><a href="#">Área do Cliente</a></li>
+      </ul>
+    </aside>
+    
+    <section class="main-section">
+      <!-- content goes here -->
+
   
 	{% block content %}
 		Main content
@@ -51,6 +72,12 @@
 
     {% include "footer" %}
     {% include "footer-scripts" %}
+    </section>
+
+    <a class="exit-off-canvas"></a>
+
+  </div>
+</div>
 
 
 </body>

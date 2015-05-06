@@ -10,10 +10,10 @@
   text-align: left
   
   &.expand
-    padding: rem-calc(8) rem-calc(16)
+    padding: inherit rem-calc(16)
     
   @media #{$small-only}
-    &.small-expand
+    &.small-expanded
       width: 100%
   
   &:after
@@ -39,27 +39,19 @@
   &.blue
     +gradient-button($color-blue)
     &:hover 
-      +gradient-button(darken($color-blue, 5%))
+      +gradient-button(darken($color-blue, 5%))      
       
-  &.purple
-    +gradient-button($color-purple)
+  &.green
+    +gradient-button($color-green)
     &:hover 
-      +gradient-button(darken($color-purple, 10%))
-         
-  &.teal
-    +gradient-button($color-teal)
-    &:hover 
-      +gradient-button(darken($color-teal, 10%))
+      +gradient-button(darken($color-green, 5%))
       
-  &.pink
-    +gradient-button($color-pink)
+  &.orange
+    +gradient-button($color-orange)
     &:hover 
-      +gradient-button(darken($color-pink, 10%))
+      +gradient-button(darken($color-orange, 5%))
       
-  &.yellow
-    +gradient-button($color-yellow)
-    &:hover 
-      +gradient-button(darken($color-yellow, 10%))
+
       
       
   // Dark
@@ -74,32 +66,14 @@
     &:hover 
       +gradient-button(darken($color-dark-blue, 10%))
       
-  &.dark-purple
-    +gradient-button($color-dark-purple)
-    &:hover 
-      +gradient-button(darken($color-dark-purple, 10%))
-         
-  &.dark-teal
-    +gradient-button($color-dark-teal)
-    &:hover 
-      +gradient-button(darken($color-dark-teal, 10%))
+  &.dark-green
+  +gradient-button($color-dark-green)
+  &:hover 
+    +gradient-button(darken($color-dark-green, 10%))
       
-  &.dark-pink
-    +gradient-button($color-dark-pink)
-    &:hover 
-      +gradient-button(darken($color-dark-pink, 10%))
-      
-  &.dark-yellow
-    +gradient-button($color-dark-yellow)
-    &:hover 
-      +gradient-button(darken($color-dark-yellow, 10%))
+  
       
   // Additional Button Colours   
-      
-  &.green
-    +gradient-button($color-green)
-    &:hover 
-      +gradient-button(darken($color-green, 10%))
         
   &.grey
     +gradient-button($color-dark-grey)

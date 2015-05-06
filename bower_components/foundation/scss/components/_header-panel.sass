@@ -6,8 +6,8 @@
     padding-top: rem-calc(145)
   
   &.header-panel
-    @media #{$medium-up}
-      padding-top: rem-calc(145)
+    @media #{$large-up}
+      padding-top: rem-calc(125)
       padding-bottom: rem-calc(80)
     
       h1
@@ -18,10 +18,22 @@
         letter-spacing: rem-calc(-1)
         font-weight: 100
         
-
-    @media #{$small-only}
-      padding-top: rem-calc(60)
+    @media #{$medium-only}
+      padding-top: rem-calc(95)
       padding-bottom: rem-calc(40)
+      h1
+        font-size: rem-calc(54)
+        letter-spacing: 0
+        margin-bottom: rem-calc(16)
+      p
+        font-size: rem-calc(28)
+        line-height: 1.3
+        letter-spacing: rem-calc(-1)
+        font-weight: 100
+    
+    @media #{$small-only}
+      padding-top: rem-calc(85)
+      padding-bottom: rem-calc(10)
       p
         font-size: rem-calc(24)
         line-height: 1.1
