@@ -1,84 +1,42 @@
 // Quick Quote Widget
- 
-    
-// Full Width QQWidget
-.qqw-full-width
-  
-  #quick-quote
-    .destination.alpha
-      @include grid-column(5)
-      @media #{$medium-only} 
-        @include grid-column(4)
-      @media #{$small-only} 
-        @include grid-column(12)
-
-    .travel-dates
-      @include grid-column(3)
-      @media #{$medium-only} 
-        @include grid-column(4)
-      @media #{$small-only} 
-        @include grid-column(12)
-
-    .travelling-as.beta
+      
+.qqc-wrapper
+  &.panel
+    +panel($bg: $color-dark-green, $adjust: true)
+    @include grid-column(12)
+  #qqc-form
+    .where
       @include grid-column(4)
       @media #{$small-only} 
         @include grid-column(12)
 
-      // target age boxes
-      #quote-traveller-ages
-        @include grid-row($behavior: nest)
-        .sub-group
-          @include grid-column(6)
-
-        @media #{$medium-up}
-          .sub-group:first-child
-            padding-right: rem-calc(8)
-          .sub-group:last-child
-            padding-left: rem-calc(8)
-          .chikdren-go-free
-            margin-bottom: rem-calc(16)
-            
-            
-          
-// Contained QQWidget
-.qqw-contained  
-  #quick-quote
-    .destination.alpha
+    .when
       @include grid-column(4)
       @media #{$small-only} 
         @include grid-column(12)
-
-    .travel-dates
+        
+    // will need to change once we add toggles
+    .ages
       @include grid-column(4)
       @media #{$small-only} 
         @include grid-column(12)
-
-    .travelling-as.beta
+        
+    .actions
       @include grid-column(4)
-      @media #{$small-only} 
-        @include grid-column(12)
 
-      // target age boxes
-      #quote-traveller-ages
-        @include grid-row($behavior: nest)
-        .sub-group
-          @include grid-column(6)
-          @media #{$medium-only}
-            @include grid-column(12)
-        @media #{$large-up}
-          .sub-group:first-child
-            padding-right: rem-calc(8)
-          .sub-group:last-child
-            padding-left: rem-calc(8)
-          .chikdren-go-free
-            margin-bottom: rem-calc(16) 
+      
             
 //          
           
-#quick-quote
+#qqc-form
   overflow: auto
-  @include grid-row($behavior: nest)
+  //@include grid-row($behavior: nest)
   
+  
+  .when
+    .input-with-icon span
+      display: none
+    
   // destinations ul
   #destinations
     margin: 0
@@ -88,9 +46,9 @@
       &:last-child
         margin-bottom: rem-calc(16)
   
-  h3
-    //@extend h4
-    color: $color-white !important
+  h5
+    span
+      color: $color-white !important
     padding-bottom: rem-calc(8)
     border-bottom: 1px solid $color-white
     
@@ -100,14 +58,10 @@
     margin-bottom: rem-calc(4)
     
   input[type='text']
-    border-top: 1px solid #0084aa
-    border-left: 1px solid #0084aa
-    border-bottom: 1px solid #34d2ff
-    border-right: 1px solid #34d2ff
     border-radius: 3px
     box-shadow: #ccc 0px 1px 1px 0px inset
     box-sizing: border-box
-    height: rem-calc(52)
+    height: rem-calc(44)
   
   //Placeholder color override
   //WebKit browsers
@@ -125,28 +79,14 @@
   input[type='text']:-ms-input-placeholder
     color: $color-dark-grey
 
-    
-  .travelling-as
-    input[type='text']
-      margin-bottom: 4px
-    .sub-group
-      float: left
-    
-    .children-go-free
-      clear: left
-      color: $color-white
-      &:hover
-        text-decoration: underline
-    .collapse
-      display: none
-      
+
   @media #{$small-only}
-    h3
+    h5
       padding-bottom: rem-calc(0)
       border-bottom: none
 
     
-  // destinations tags
+  // destinations tags need updating once scripts are in
   #destinations
     li
       background-color: $color-dark-blue
@@ -172,13 +112,13 @@
     +gradient-button(darken($color-orange, 5%))
     +border-radius(4px)
     border: 1px solid darken($color-orange, 10%)
-    width: 100%
     margin-top: rem-calc(16)
     margin-bottom: 0 //rem-calc(16)
     font-size: rem-calc(20)
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2)
     cursor: pointer
     position: relative
+    width: 100%
     padding: rem-calc(13) rem-calc(16)
     padding-right: rem-calc(44)
     text-align: left
@@ -186,6 +126,9 @@
       +gradient-button(darken($color-orange, 10%))
       border: 1px solid darken($color-orange, 30%)
       text-shadow: 1px 1px 10px rgba($color-orange, 0.5)
+    // Hide the default Arrow  
+    span
+      display: none
       
     @media #{$medium-up}
       //margin-top: rem-calc(48)

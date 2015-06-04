@@ -3581,194 +3581,107 @@ span.submit-arw:before {
   top: 0.125rem;
   color: #FFF; }
 
-.qqw-full-width #quick-quote .destination.alpha {
+.qqc-wrapper.panel {
+  border-style: none;
+  border-width: 1px;
+  border-color: #00575b;
+  margin-bottom: 0;
+  padding: 1.25rem;
+  background: #006266;
+  color: #FFFFFF;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
-  width: 41.66667%;
+  width: 100%;
   float: left; }
-  @media only screen and (min-width:40.063em) and (max-width:64em) {
-    .qqw-full-width #quick-quote .destination.alpha {
-      padding-left: 0.75rem;
-      padding-right: 0.75rem;
-      width: 33.33333%;
-      float: left; } }
-  @media only screen and (max-width: 40em) {
-    .qqw-full-width #quick-quote .destination.alpha {
-      padding-left: 0.75rem;
-      padding-right: 0.75rem;
-      width: 100%;
-      float: left; } }
-.qqw-full-width #quick-quote .travel-dates {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-  width: 25%;
-  float: left; }
-  @media only screen and (min-width:40.063em) and (max-width:64em) {
-    .qqw-full-width #quick-quote .travel-dates {
-      padding-left: 0.75rem;
-      padding-right: 0.75rem;
-      width: 33.33333%;
-      float: left; } }
-  @media only screen and (max-width: 40em) {
-    .qqw-full-width #quick-quote .travel-dates {
-      padding-left: 0.75rem;
-      padding-right: 0.75rem;
-      width: 100%;
-      float: left; } }
-.qqw-full-width #quick-quote .travelling-as.beta {
+  .qqc-wrapper.panel > :first-child {
+    margin-top: 0; }
+  .qqc-wrapper.panel > :last-child {
+    margin-bottom: 0; }
+  .qqc-wrapper.panel h1, .qqc-wrapper.panel h2, .qqc-wrapper.panel h3, .qqc-wrapper.panel h4, .qqc-wrapper.panel h5, .qqc-wrapper.panel h6, .qqc-wrapper.panel p, .qqc-wrapper.panel li, .qqc-wrapper.panel dl {
+    color: #FFFFFF; }
+  .qqc-wrapper.panel h1, .qqc-wrapper.panel h2, .qqc-wrapper.panel h3, .qqc-wrapper.panel h4, .qqc-wrapper.panel h5, .qqc-wrapper.panel h6 {
+    line-height: 1; }
+    .qqc-wrapper.panel h1.subheader, .qqc-wrapper.panel h2.subheader, .qqc-wrapper.panel h3.subheader, .qqc-wrapper.panel h4.subheader, .qqc-wrapper.panel h5.subheader, .qqc-wrapper.panel h6.subheader {
+      line-height: 1.4; }
+.qqc-wrapper #qqc-form .where {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
   width: 33.33333%;
   float: left; }
   @media only screen and (max-width: 40em) {
-    .qqw-full-width #quick-quote .travelling-as.beta {
+    .qqc-wrapper #qqc-form .where {
       padding-left: 0.75rem;
       padding-right: 0.75rem;
       width: 100%;
       float: left; } }
-  .qqw-full-width #quick-quote .travelling-as.beta #quote-traveller-ages {
-    width: auto;
-    margin: 0 -0.75rem;
-    max-width: none; }
-    .qqw-full-width #quick-quote .travelling-as.beta #quote-traveller-ages:before, .qqw-full-width #quick-quote .travelling-as.beta #quote-traveller-ages:after {
-      content: " ";
-      display: table; }
-    .qqw-full-width #quick-quote .travelling-as.beta #quote-traveller-ages:after {
-      clear: both; }
-    .qqw-full-width #quick-quote .travelling-as.beta #quote-traveller-ages .sub-group {
+.qqc-wrapper #qqc-form .when {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  width: 33.33333%;
+  float: left; }
+  @media only screen and (max-width: 40em) {
+    .qqc-wrapper #qqc-form .when {
       padding-left: 0.75rem;
       padding-right: 0.75rem;
-      width: 50%;
-      float: left; }
-    @media only screen and (min-width:40.063em) {
-      .qqw-full-width #quick-quote .travelling-as.beta #quote-traveller-ages .sub-group:first-child {
-        padding-right: 0.5rem; }
-      .qqw-full-width #quick-quote .travelling-as.beta #quote-traveller-ages .sub-group:last-child {
-        padding-left: 0.5rem; }
-      .qqw-full-width #quick-quote .travelling-as.beta #quote-traveller-ages .chikdren-go-free {
-        margin-bottom: 1rem; } }
+      width: 100%;
+      float: left; } }
+.qqc-wrapper #qqc-form .ages {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  width: 33.33333%;
+  float: left; }
+  @media only screen and (max-width: 40em) {
+    .qqc-wrapper #qqc-form .ages {
+      padding-left: 0.75rem;
+      padding-right: 0.75rem;
+      width: 100%;
+      float: left; } }
+.qqc-wrapper #qqc-form .actions {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  width: 33.33333%;
+  float: left; }
 
-.qqw-contained #quick-quote .destination.alpha {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-  width: 33.33333%;
-  float: left; }
-  @media only screen and (max-width: 40em) {
-    .qqw-contained #quick-quote .destination.alpha {
-      padding-left: 0.75rem;
-      padding-right: 0.75rem;
-      width: 100%;
-      float: left; } }
-.qqw-contained #quick-quote .travel-dates {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-  width: 33.33333%;
-  float: left; }
-  @media only screen and (max-width: 40em) {
-    .qqw-contained #quick-quote .travel-dates {
-      padding-left: 0.75rem;
-      padding-right: 0.75rem;
-      width: 100%;
-      float: left; } }
-.qqw-contained #quick-quote .travelling-as.beta {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-  width: 33.33333%;
-  float: left; }
-  @media only screen and (max-width: 40em) {
-    .qqw-contained #quick-quote .travelling-as.beta {
-      padding-left: 0.75rem;
-      padding-right: 0.75rem;
-      width: 100%;
-      float: left; } }
-  .qqw-contained #quick-quote .travelling-as.beta #quote-traveller-ages {
-    width: auto;
-    margin: 0 -0.75rem;
-    max-width: none; }
-    .qqw-contained #quick-quote .travelling-as.beta #quote-traveller-ages:before, .qqw-contained #quick-quote .travelling-as.beta #quote-traveller-ages:after {
-      content: " ";
-      display: table; }
-    .qqw-contained #quick-quote .travelling-as.beta #quote-traveller-ages:after {
-      clear: both; }
-    .qqw-contained #quick-quote .travelling-as.beta #quote-traveller-ages .sub-group {
-      padding-left: 0.75rem;
-      padding-right: 0.75rem;
-      width: 50%;
-      float: left; }
-      @media only screen and (min-width:40.063em) and (max-width:64em) {
-        .qqw-contained #quick-quote .travelling-as.beta #quote-traveller-ages .sub-group {
-          padding-left: 0.75rem;
-          padding-right: 0.75rem;
-          width: 100%;
-          float: left; } }
-    @media only screen and (min-width:64.063em) {
-      .qqw-contained #quick-quote .travelling-as.beta #quote-traveller-ages .sub-group:first-child {
-        padding-right: 0.5rem; }
-      .qqw-contained #quick-quote .travelling-as.beta #quote-traveller-ages .sub-group:last-child {
-        padding-left: 0.5rem; }
-      .qqw-contained #quick-quote .travelling-as.beta #quote-traveller-ages .chikdren-go-free {
-        margin-bottom: 1rem; } }
-
-#quick-quote {
-  overflow: auto;
-  width: auto;
-  margin: 0 -0.75rem;
-  max-width: none; }
-  #quick-quote:before, #quick-quote:after {
-    content: " ";
-    display: table; }
-  #quick-quote:after {
-    clear: both; }
-  #quick-quote #destinations {
+#qqc-form {
+  overflow: auto; }
+  #qqc-form .when .input-with-icon span {
+    display: none; }
+  #qqc-form #destinations {
     margin: 0;
     padding-left: 0; }
-    #quick-quote #destinations li {
+    #qqc-form #destinations li {
       font-weight: 500; }
-      #quick-quote #destinations li:last-child {
+      #qqc-form #destinations li:last-child {
         margin-bottom: 1rem; }
-  #quick-quote h3 {
-    color: #FFF !important;
+  #qqc-form h5 {
     padding-bottom: 0.5rem;
     border-bottom: 1px solid #FFF; }
-  #quick-quote label {
+    #qqc-form h5 span {
+      color: #FFF !important; }
+  #qqc-form label {
     font-weight: 300;
     color: #FFF;
     margin-bottom: 0.25rem; }
-  #quick-quote input[type='text'] {
-    border-top: 1px solid #0084aa;
-    border-left: 1px solid #0084aa;
-    border-bottom: 1px solid #34d2ff;
-    border-right: 1px solid #34d2ff;
+  #qqc-form input[type='text'] {
     border-radius: 3px;
     box-shadow: #ccc 0px 1px 1px 0px inset;
     box-sizing: border-box;
-    height: 3.25rem; }
-  #quick-quote input[type='text']::-webkit-input-placeholder {
+    height: 2.75rem; }
+  #qqc-form input[type='text']::-webkit-input-placeholder {
     color: #4d473b; }
-  #quick-quote input[type='text']:-moz-placeholder {
+  #qqc-form input[type='text']:-moz-placeholder {
     color: #4d473b;
     opacity: 1; }
-  #quick-quote input[type='text']::-moz-placeholder {
+  #qqc-form input[type='text']::-moz-placeholder {
     color: #4d473b;
     opacity: 1; }
-  #quick-quote input[type='text']:-ms-input-placeholder {
+  #qqc-form input[type='text']:-ms-input-placeholder {
     color: #4d473b; }
-  #quick-quote .travelling-as input[type='text'] {
-    margin-bottom: 4px; }
-  #quick-quote .travelling-as .sub-group {
-    float: left; }
-  #quick-quote .travelling-as .children-go-free {
-    clear: left;
-    color: #FFF; }
-    #quick-quote .travelling-as .children-go-free:hover {
-      text-decoration: underline; }
-  #quick-quote .travelling-as .collapse {
-    display: none; }
   @media only screen and (max-width: 40em) {
-    #quick-quote h3 {
+    #qqc-form h5 {
       padding-bottom: 0;
       border-bottom: none; } }
-  #quick-quote #destinations li {
+  #qqc-form #destinations li {
     background-color: #005581;
     display: inline-block;
     padding: 0.25rem 0.625rem;
@@ -3781,16 +3694,16 @@ span.submit-arw:before {
     margin-right: 0.5rem;
     margin-top: 0.5rem; }
     @media only screen and (max-width: 40em) {
-      #quick-quote #destinations li {
+      #qqc-form #destinations li {
         padding: 0.5rem 0.875rem; } }
-    #quick-quote #destinations li a {
+    #qqc-form #destinations li a {
       font-size: 1rem;
       font-weight: 500;
       margin-left: 4px; }
       @media only screen and (max-width: 40em) {
-        #quick-quote #destinations li a {
+        #qqc-form #destinations li a {
           font-size: 1.375rem; } }
-  #quick-quote .continue {
+  #qqc-form .continue {
     border-style: solid;
     border-width: 0;
     cursor: pointer;
@@ -3823,21 +3736,21 @@ span.submit-arw:before {
     -ms-border-radius: 4px;
     border-radius: 4px;
     border: 1px solid #fcaa29;
-    width: 100%;
     margin-top: 1rem;
     margin-bottom: 0;
     font-size: 1.25rem;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     position: relative;
+    width: 100%;
     padding: 0.8125rem 1rem;
     padding-right: 2.75rem;
     text-align: left; }
-    #quick-quote .continue:hover, #quick-quote .continue:focus {
+    #qqc-form .continue:hover, #qqc-form .continue:focus {
       background-color: #065a7a; }
-    #quick-quote .continue:hover, #quick-quote .continue:focus {
+    #qqc-form .continue:hover, #qqc-form .continue:focus {
       color: #FFFFFF; }
-    #quick-quote .continue:hover {
+    #qqc-form .continue:hover {
       background: #fcaa29;
       background: -moz-linear-gradient(top, #fdb038 0%, #fca419 100%);
       background: -webkit-linear-gradient(top, #fdb038 0%, #fca419 100%);
@@ -3847,16 +3760,18 @@ span.submit-arw:before {
       border: 1px solid #ef9303;
       border: 1px solid #bd7402;
       text-shadow: 1px 1px 10px rgba(253, 190, 91, 0.5); }
-  #quick-quote .input-group {
+    #qqc-form .continue span {
+      display: none; }
+  #qqc-form .input-group {
     position: relative; }
-    #quick-quote .input-group .icon-tid-menu:before {
+    #qqc-form .input-group .icon-tid-menu:before {
       content: '\f03a';
       font: normal normal normal 16px/1 FontAwesome;
       position: absolute;
       right: 1.25rem;
       bottom: 1rem;
       color: #00bae4; }
-    #quick-quote .input-group .icon-tid-calendar:before {
+    #qqc-form .input-group .icon-tid-calendar:before {
       content: '\f073';
       font: normal normal normal 16px/1 FontAwesome;
       position: absolute;
