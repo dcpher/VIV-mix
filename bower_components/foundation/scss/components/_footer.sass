@@ -4,31 +4,14 @@
   margin-bottom: 0
   background-color: $color-dark-green
   border: none
-  
+  background-image: url(/Media/VIV/images/homepage/footer-background.jpg)
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
   .footer-header
     margin-top: rem-calc(16)
     padding-bottom: rem-calc(16)
     .follow-us-on
-      margin-top: rem-calc(10)
-      padding-left: rem-calc(8)
-
-      li
-        margin-left: rem-calc(8)
-        a
-          +border-radius(20px)
-          border: 2px solid lighten($color-orange, 0)
-          width: rem-calc(40)
-          height: rem-calc(40)
-          text-align: center
-          //background-color: darken($color-light-grey, 45)
-          color: $color-white //lighten($color-grey, 20)
-          padding-top: rem-calc(6)
-          font-size: rem-calc(24)
-          +transition
-          &:hover
-            //background-color: $color-white
-            color: $color-orange
-
       @media #{$small-only}
         margin-top: rem-calc(24)
       
@@ -37,11 +20,13 @@
     margin-bottom: rem-calc(32)
     ul
       li
-        font-size: rem-calc(16)
-        margin-bottom: 0
+        font-size: rem-calc(14)
+        line-height: 1.1
+        display: block
+        margin-bottom: rem-calc(8)
         &.title
           color: $color-white
-          font-size: rem-calc(22)
+          font-size: rem-calc(20)
           padding-bottom: rem-calc(8)
         a
           color: lighten($color-green, 10)

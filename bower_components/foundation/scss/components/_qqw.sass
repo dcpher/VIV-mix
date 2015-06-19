@@ -1,28 +1,30 @@
 // Quick Quote Widget
       
-.qqc-wrapper
+.qqw-contained 
   &.panel
     +panel($bg: $color-dark-green, $adjust: true)
     @include grid-column(12)
-  #qqc-form
+  #quick-quote
     .where
-      @include grid-column(4)
+      @include grid-column(12)
       @media #{$small-only} 
         @include grid-column(12)
 
     .when
-      @include grid-column(4)
-      @media #{$small-only} 
-        @include grid-column(12)
+      @include grid-row($behavior: nest-collapse)
+      .input-group  
+        @include grid-column(6)
+        @media #{$small-only} 
+          @include grid-column(12)
         
     // will need to change once we add toggles
     .ages
-      @include grid-column(4)
+      @include grid-column(6 )
       @media #{$small-only} 
         @include grid-column(12)
         
     .actions
-      @include grid-column(4)
+      @include grid-column(6)
 
       
             

@@ -1,0 +1,25 @@
+// follow-links
+
+.follow-us-on
+  margin-top: rem-calc(10)
+  padding-left: rem-calc(8)
+  li
+    margin-left: rem-calc(8)
+    a
+      +border-radius(20px)
+      border: 2px solid lighten($color-orange, 0)
+      width: rem-calc(40)
+      height: rem-calc(40)
+      text-align: center
+      color: $color-white 
+      padding-top: rem-calc(8)
+      font-size: rem-calc(20)
+      +transition
+      &:hover
+        color: $color-orange
+      
+    &.title
+      padding-top: rem-calc(6)
+      
+      @media(small-only)
+        display: block

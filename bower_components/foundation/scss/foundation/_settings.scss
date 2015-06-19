@@ -147,7 +147,7 @@ $font-smoothing: antialiased;
 // $last-child-float: $opposite-direction;
 
 // We use these to make sure border radius matches unless we want it different.
-$global-radius: 3px;
+$global-radius: 4px;
 // $global-rounded: 1000px;
 
 // We use these to control inset shadow shiny edges and depressions.
@@ -207,14 +207,14 @@ $global-radius: 3px;
  $header-font-weight: 100;
  $header-font-style: normal;
  $header-font-color: $jet;
- $header-line-height: 1.1;
+ $header-line-height: 1.0;
  $header-top-margin: .2rem;
  $header-bottom-margin: .5rem;
  $header-text-rendering: optimizeLegibility;
 
 // We use these to control header font sizes
- $h1-font-size: rem-calc(80);
- $h2-font-size: rem-calc(60);
+ $h1-font-size: rem-calc(72);
+ $h2-font-size: rem-calc(56);
  $h3-font-size: rem-calc(32);
  $h4-font-size: rem-calc(28);
  $h5-font-size: rem-calc(24);
@@ -242,8 +242,8 @@ $global-radius: 3px;
 // We use these to style paragraphs
  $paragraph-font-family: inherit;
  $paragraph-font-weight: $font-weight-normal;
- $paragraph-font-size: rem-calc(18);
- $paragraph-line-height: rem-calc(24); 
+ $paragraph-font-size: rem-calc(16);
+ $paragraph-line-height: rem-calc(22); 
  $paragraph-margin-bottom: rem-calc(20);
  $paragraph-aside-font-size: rem-calc(14);
  $paragraph-aside-line-height: 1.35;
@@ -631,8 +631,8 @@ $form-spacing: rem-calc(16);
 
 // We use these to style the labels in different ways
 // $form-label-pointer: pointer;
-// $form-label-font-size: rem-calc(16);
-// $form-label-font-weight: $font-weight-normal;
+$form-label-font-size: rem-calc(16);
+$form-label-font-weight: $font-weight-normal;
 // $form-label-line-height: 1.8;
 // $form-label-font-color: scale-color($black, $lightness: 30%);
 // $form-label-small-transform: capitalize;
