@@ -114,7 +114,7 @@ select {
 .row {
   width: 95%;
   margin: 0 auto;
-  max-width: 71.875rem; }
+  max-width: 78.125rem; }
   .row:before, .row:after {
     content: " ";
     display: table; }
@@ -4103,7 +4103,29 @@ hr {
   border-bottom: 6px solid #fdbe5b;
   background-image: url(/Media/VIV/images/homepage/hero-swimmers-large.jpg);
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  padding-top: 5.25rem; }
+  @media only screen and (max-width: 40em) {
+    #homepage-header {
+      padding-top: 5.25rem; } }
+  #homepage-header .header-logo {
+    padding-bottom: 2.5rem; }
+  #homepage-header h1 {
+    font-size: 3rem;
+    letter-spacing: -2px; }
+    @media only screen and (max-width: 40em) {
+      #homepage-header h1 {
+        font-size: 2rem;
+        letter-spacing: -1px; } }
+  @media only screen and (max-width: 40em) {
+    #homepage-header .lead {
+      font-size: 1rem;
+      line-height: 1.1; } }
+  @media only screen and (max-width: 40em) {
+    #homepage-header .follow-us-on .title {
+      display: block;
+      text-align: left;
+      width: 100%; } }
 
 .disc-image {
   background-color: #5fc3b1;

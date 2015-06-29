@@ -115,7 +115,7 @@ select {
 .row {
   width: 95%;
   margin: 0 auto;
-  max-width: 71.875rem; }
+  max-width: 78.125rem; }
   .row:before, .row:after {
     content: " ";
     display: table; }
@@ -3770,7 +3770,7 @@ hr {
 #main {
   width: 95%;
   margin: 0 auto;
-  max-width: 71.875rem;
+  max-width: 78.125rem;
   margin-top: 2rem; }
   #main:before, #main:after {
     content: " ";

@@ -6,6 +6,31 @@
   background-image: url(/Media/VIV/images/homepage/hero-swimmers-large.jpg)
   background-size: cover
   background-position: center
+  padding-top: rem-calc(84)
+  @media #{$small-only}
+    padding-top: rem-calc(84)
+  
+  .header-logo
+    padding-bottom: rem-calc(40)
+  
+  h1
+    font-size: rem-calc(48)
+    letter-spacing: -2px
+    @media #{$small-only}
+      font-size: rem-calc(32)
+      letter-spacing: -1px
+
+  .lead
+    @media #{$small-only}
+      font-size: rem-calc(16)
+      line-height: 1.1
+  .follow-us-on 
+    .title
+      @media #{$small-only}
+        display: block
+        text-align: left
+        width: 100%
+  
 
 // circle image component
 .disc-image

@@ -1,0 +1,93 @@
+{% block title %}Vivamos - Seguro Viagem{% endblock %}
+{% block content %} 
+<!-- Header Panel -->
+<div class="header-panel dark-green-panel" id="homepage-header">
+  <div class="row">
+    <div class="small-12 medium-8 large-5 column">
+      <h1>Seguro Viagem como você nunca viu, um novo <span class="green">parceiro está chegando.</span></h1>
+      <p class="lead">Seja um dos primeiros a saber sobre o lançamento da Vivamos</p>
+      <form class="prelaunchform" action="http://worldnomadsgroup.createsend.com/t/y/s/fdhhid/" method="post" id="subForm">
+        <div class="row">
+          <div class="large-12 columns">
+            <div class="row collapse postfix-radius">
+              <div class="small-12 medium-7 columns">
+                <input id="fieldEmail" name="cm-fdhhid-fdhhid" type="email" required placeholder="Digite seu e-mail" />
+                <input id="fieldcdkudu" name="cm-f-cdkudu" type="hidden" value="yes" />
+              </div>
+              <div class="small-12 medium-5 columns">
+                <button href="#" class="button postfix green postfix" type="submit">Inscreva-se</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="row">
+    <div class="small-12 column text-right">
+      <ul class="follow-us-on inline-list right">
+        <li class="title">Compartilhe com quem adora viajar</li>
+        <li><a class="fa fa-facebook" href="https://www.facebook.com/"></a></li>
+        <li><a class="fa fa-twitter" href="https://twitter.com/"></a></li>
+        <li><a class="fa fa-google-plus" href="https://plus.google.com/+"></a></li>
+        <li><a class="fa fa-stumbleupon" href=""></a></li>
+        <li><a class="fa fa-linkedin" href=""></a></li>
+
+      </ul>
+    </div>
+  </div>
+</div>
+
+  <script>
+    $(function () {
+      $('.prelaunchform').submit(function (e) {
+        var form = $(this);
+        $.getJSON(this.action + "?callback=?", form.serialize(), function (data) {
+          if (data.Status === 400) {
+            form.find('.error').remove();
+            form.append("&lt;p class='error'&gt;" + data.Message + "&lt;/p&gt;");
+          } else { // 200
+            wng.googleAnalytics.trackEvent('PreLaunch', 'Signup');
+            form.html("<div class='successmessage'>Conformation Message goes here</div>");
+          }
+        });
+        e.preventDefault();
+      });
+    });
+  </script>
+
+<!-- Content Panel -->
+<div class="content-panel green-panel">
+  <div class="row">
+    <div class="small-12 medium-12 column">
+      <h2 class="text-center white">Let’s live. Let’s Go!</h2>
+      <p class="lead text-center dark-green">We’re travelers like you, so we want our travel insurance to be more than just great value. We want to give you the freedom and confidence to live your life through travel. </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="small-12 medium-4 column">
+      <div class="disc-image cover">
+        <div class="white text-center">Stay</div>
+        <h4 class="white text-center">Covered</h4>
+      </div>
+      <p class="text-center dark-green">We know what good travel insurance is, we know what you need and what you don’t, because we’re travelers like you. </p>
+    </div>
+    <div class="small-12 medium-4 column">
+      <div class="disc-image smart">
+        <div class="white text-center">Travel</div>
+        <h4 class="white text-center">Smart</h4>
+      </div>
+      <p class="text-center dark-green">We don’t just keep you travelling safely, we’ll make sure you travel smarter, getting the most out of every trip you take with us. </p>
+    </div>
+    <div class="small-12 medium-4 column">
+      <div class="disc-image connect">
+        <div class="white text-center">Get</div>
+        <h4 class="white text-center">Connected</h4>
+      </div>
+      <p class="text-center dark-green">Travel is made better by the people you meet. So we’ll connect you to a network of travellers, happy to share their countries with you.</p>
+    </div>
+
+  </div>
+</div>
+
+{% endblock %}
