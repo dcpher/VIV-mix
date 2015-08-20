@@ -1,4 +1,4 @@
-// extend Panels
+// Panels
   
 .green-panel
   background-color: $color-green
@@ -23,10 +23,14 @@
   
 .green-panel, .blue-panel, .orange-panel, .grey-panel, .dark-green-panel, .dark-blue-panel, .dark-grey-panel
   padding: rem-calc(20)
+  p, div
+    &:last-child
+      margin-bottom: 0
   
 .dark-green-panel, .dark-blue-panel, .dark-grey-panel
   h1, h2, h3, h4, h5, div, p, b
     color: $color-white
+    
   
 // header panel style    
 .header-panel

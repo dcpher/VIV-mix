@@ -95,7 +95,7 @@ $font-family-sans-serif: "Ubuntu", Helvetica, Arial, sans-serif;
 
 // We use these to define default font weights
 $font-weight-normal: 100;
-$font-weight-bold: 300;
+$font-weight-bold: 500;
 
  $white       : #FFFFFF;
  $ghost       : #FAFAFA;
@@ -124,9 +124,9 @@ $font-weight-bold: 300;
 
 // We use these as default colors throughout
 $primary-color: $viv-blue;
-// $secondary-color: #e7e7e7;
-// $alert-color: #f04124;
-// $success-color: #43AC6A;
+$secondary-color: #e7e7e7;
+$alert-color: #ed4338;
+$success-color: #43AC6A;
 // $warning-color: #f08a24;
 // $info-color: #a0d3e8;
 
@@ -1289,7 +1289,7 @@ $table-border-style: none;
 
 // These control the table head styles
 // $table-head-bg: $white-smoke;
-$table-head-font-size: rem-calc(24);
+$table-head-font-size: rem-calc(18);
 // $table-head-font-color: $jet;
 $table-head-font-weight: $font-weight-normal;
 // $table-head-padding: rem-calc(8 10 10);

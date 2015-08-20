@@ -1,0 +1,28 @@
+// Alert boxes
+
+.alert-box
+  background-color: lighten($color-red, 35%)
+  padding: rem-calc(20px)
+  border: 1px solid lighten($color-red, 4%)
+  margin: rem-calc(8px) 0
+  position: relative
+  transition: opacity 300ms ease-out
+
+  .close
+    right: rem-calc(4px)
+    background: inherit
+    color: $color-dark-grey
+    font-size: rem-calc(24px)
+    line-height: .9
+    margin-top: 0
+    opacity: 0.6
+    padding: 0 12px 4px
+    position: absolute    
+    
+  &.success
+    background-color: lighten($color-green, 25%)
+    border: 1px solid darken($color-green, 4%)
+
+  &.secondary
+    background-color: lighten($color-blue, 45%)
+    border: 1px solid darken($color-blue, 4%)  
