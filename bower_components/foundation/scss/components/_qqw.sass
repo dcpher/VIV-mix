@@ -1,24 +1,21 @@
 // Quick Quote Widget
 
+// Default Form Styles
 
-      
-            
-// Default Form Styles         
-          
 #public-insurance-quote-editor
-  overflow: auto
+  // overflow: auto
   //@include grid-row($behavior: nest)
-  
+
   .where
     input[type='text']
       border-radius: 4px 0px 0px 4px
     #selected-destinations
       margin-bottom: 0
-  
+
   .when
     .input-with-icon span
       display: none
-    
+
   // destinations ul
   #destinations
     margin: 0
@@ -27,34 +24,34 @@
       font-weight: 500
       &:last-child
         margin-bottom: rem-calc(16)
-  
+
   h5
     span
       color: $color-white !important
     //padding-bottom: rem-calc(8)
     //border-bottom: 1px solid $color-white
-    
+
   label
     font-weight: 300
     color: $color-white
     margin-bottom: rem-calc(4)
-    
+
   input[type='text']
     border-radius: 0px
     box-shadow: #ccc 0px 1px 1px 0px inset
     box-sizing: border-box
     height: rem-calc(44)
-  
+
   //Placeholder color override
   //WebKit browsers
-  input[type='text']::-webkit-input-placeholder  
+  input[type='text']::-webkit-input-placeholder
     color: $color-dark-grey
   // Mozilla Firefox 4 to 18
-  input[type='text']:-moz-placeholder  
+  input[type='text']:-moz-placeholder
     color: $color-dark-grey
     opacity:  1
   //Mozilla Firefox 19+
-  input[type='text']::-moz-placeholder 
+  input[type='text']::-moz-placeholder
     color: $color-dark-grey
     opacity:  1
   // Internet Explorer 10+
@@ -69,7 +66,7 @@
       padding-bottom: rem-calc(0)
       border-bottom: none
 
-    
+
   // destinations tags need updating once scripts are in
   #destinations
     li
@@ -89,7 +86,7 @@
         margin-left: 4px
         @media #{$small-only}
           font-size: rem-calc(22)
-  
+
   // submit button
   .continue
     @include button
@@ -106,17 +103,17 @@
     padding: rem-calc(13) rem-calc(16)
     padding-right: rem-calc(44)
     text-align: left
-    &:hover 
+    &:hover
       +gradient-button(darken($color-orange, 10%))
       border: 1px solid darken($color-orange, 30%)
       text-shadow: 1px 1px 10px rgba($color-orange, 0.5)
-    // Hide the default Arrow  
+    // Hide the default Arrow
     span
       display: none
-      
+
     @media #{$medium-up}
       //margin-top: rem-calc(48)
-  
+
   // QQW icon styles
   .input-group
     position: relative
@@ -127,7 +124,7 @@
       right: rem-calc(20)
       bottom: rem-calc(16)
       color: $color-blue
-      
+
     .icon-tid-calendar:before
       content: '\f073'
       font: normal normal normal 16px/1 FontAwesome
@@ -135,10 +132,13 @@
       right: rem-calc(20)
       bottom: rem-calc(16)
       color: $color-blue
-      
-      
+
+
 // QQW on One Line Styles
 .qqw-one-line
+  &.row
+    @media #{$large-up}
+      margin-bottom: rem-calc(40)
   .panel
     +border-radius(10px)
     padding: rem-calc(12px)
@@ -147,12 +147,12 @@
     h5
       font-size: rem-calc(20px)
       margin-top: 0
-      @media #{$large-up} 
+      @media #{$large-up}
         display: none
 
     .where
       margin-bottom: rem-calc(16px)
-      @media #{$large-up} 
+      @media #{$large-up}
         width: 32%
         display: inline-block
         margin: 0
@@ -162,7 +162,7 @@
     .when
       display: block
       margin-bottom: rem-calc(16px)
-      @media #{$large-up} 
+      @media #{$large-up}
         width: 28%
         display: inline-block
         float: left
@@ -172,8 +172,8 @@
           float: left
           label
             display: none
-                
-      @media #{$medium-only} 
+
+      @media #{$medium-only}
         .input-group
           width: 49%
           display: inline-block
@@ -181,14 +181,14 @@
             margin-right: 1.25%
           &.return-date
             //margin-left: 1%
-          
+
       @media #{$small-only}
         .input-group
           width: 100%
 
     // will need to change once we add toggles
     .ages
-      @media #{$large-up} 
+      @media #{$large-up}
         width: 14%
         display: inline-block
         margin: 0
@@ -200,7 +200,7 @@
     .actions
       @media #{$small-up}
         margin-top: rem-calc(16px)
-      @media #{$large-up} 
+      @media #{$large-up}
         width: 26%
         display: inline-block
         margin-top: 0
@@ -209,6 +209,34 @@
           line-height: 0.85
           height: rem-calc(44px)
           +border-radius(0 4px 4px 0)
-      
-        
 
+    #quote-destination
+      position: inherit
+
+    #selected-destinations
+      margin-left: 0
+      @media #{$large-up}
+        position: absolute
+        top: rem-calc(60)
+        left: 0
+        right: 0
+        padding-top: rem-calc(8)
+        padding-left: rem-calc(12)
+        border-radius: rem-calc(0 0 10 10)
+        background-color: $color-dark-green
+
+      > li
+        display: inline-block !important
+        margin: rem-calc(0 10 10 0)
+        padding: rem-calc(4 8)
+        border-radius: rem-calc(2)
+        font-size: rem-calc(13)
+        color: $color-white
+        text-shadow: 1px 1px 1px darken($color-green, 20%)
+        background-color: $color-green
+
+        > a
+          margin-left: rem-calc(4)
+          color: #ddd
+          &:hover
+            color: $color-white
