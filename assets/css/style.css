@@ -4357,7 +4357,7 @@ hr {
     .datepicker .datepicker-calendar:nth-child(3) {
       display: block; } }
 
-#countryPanel {
+.uber-menu {
   font-family: "Ubuntu", Helvetica, Arial, sans-serif;
   font-size: 12px;
   background: #fff;
@@ -4366,7 +4366,7 @@ hr {
   padding: 16px;
   z-index: 100;
   margin-top: 10px; }
-  #countryPanel:before {
+  .uber-menu:before {
     content: "";
     z-index: 101;
     position: absolute;
@@ -4378,73 +4378,47 @@ hr {
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-bottom: 10px solid #FFF; }
-  #countryPanel .closePanel {
+  .uber-menu .closePanel {
     position: absolute;
     top: 16px;
     right: 16px;
     color: #00bae4;
     font-size: 0.875rem; }
-    #countryPanel .closePanel:hover {
+    .uber-menu .closePanel:hover {
       cursor: pointer; }
-  #countryPanel h3 {
-    font-family: "Ubuntu", Helvetica, Arial, sans-serif;
-    font-weight: 300;
-    font-size: 18px;
-    margin: 0;
-    margin-bottom: 16px;
-    padding-bottom: 8px;
-    border-bottom: 1px solid #ebebeb; }
-    #countryPanel h3 strong {
-      font-weight: 300; }
-  #countryPanel dl {
-    margin: 0;
-    margin-bottom: 16px; }
-  #countryPanel dd {
-    margin-left: 0;
-    margin-bottom: 0.25rem;
-    font-size: 1rem; }
-    #countryPanel dd a {
-      padding: 0.375rem 0.625rem;
-      color: #00bae4;
-      font-weight: 300; }
-    #countryPanel dd a:hover {
-      background: #00bae4;
-      border-radius: 1px;
-      color: #fff;
-      cursor: pointer; }
-  #countryPanel dt {
-    color: #4d473b;
-    font-family: "Ubuntu", Helvetica, Arial, sans-serif;
-    font-weight: 300;
-    font-size: 24px;
-    margin-bottom: 16px;
-    padding-left: 10px; }
-  #countryPanel .region {
-    float: left;
-    margin-left: 16px;
-    border-left: 1px solid #ebebeb;
-    padding-left: 8px; }
-    #countryPanel .region:first-child {
-      margin-left: 0; }
-  #countryPanel .note {
-    clear: both;
-    border: none;
-    border-radius: 2px;
-    background-color: #f8f8f8;
-    display: block;
-    padding: 10px 16px;
-    font-size: 0.875rem;
-    font-weight: 300; }
-  @media all and (max-width: 745px) {
-    #countryPanel .note, #countryPanel .regions, #countryPanel .closePanel {
-      display: none; }
-    #countryPanel h3 {
-      margin: 0;
-      padding: 0;
-      border: none; } }
-  @media all and (max-width: 470px) {
-    #countryPanel h3 {
-      font-size: 14px; } }
+  .uber-menu h2 {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0; }
+  .uber-menu .groups {
+    list-style: none; }
+    .uber-menu .groups .group {
+      width: 16%;
+      float: left;
+      margin-right: 16px;
+      border-left: 1px solid #f6f6f6;
+      padding-left: 16px;
+      margin-bottom: 12px; }
+      .uber-menu .groups .group h3 {
+        font-size: 1.25rem;
+        margin: 0;
+        margin-bottom: 16px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid #ebebeb; }
+      .uber-menu .groups .group .countries {
+        margin-left: 0;
+        margin-bottom: 0.25rem;
+        font-size: 1rem;
+        list-style: none; }
+        .uber-menu .groups .group .countries a {
+          padding: 0.375rem 0.625rem;
+          color: #00bae4;
+          font-weight: 300; }
+        .uber-menu .groups .group .countries a:hover {
+          background: #00bae4;
+          border-radius: 1px;
+          color: #fff;
+          cursor: pointer; }
 
 .autocomplete {
   background: #fff;

@@ -1,7 +1,7 @@
 // _autocomplete.sass
 
 // Country Panel [not namespaced]
-#countryPanel
+.uber-menu
   font-family: $qqc-font-family-body
   font-size: $um-font-size-body
   background: $um-color-background
@@ -12,58 +12,78 @@
   +qqc-popout-caret
   .closePanel
     +qqc-close-button
-  h3
-    +qqc-popout-header
-  dl
-    margin: 0
-    margin-bottom: $qqc-blh
-  dd
-    margin-left: 0
-    margin-bottom: rem-calc(4)
-    font-size: rem-calc(16)
-    a
-      padding: rem-calc(6) rem-calc(10)
-      //line-height: 1.6
-      color: $color-blue
-      font-weight: 300
-    a:hover
-      background: $qqc-color-heading
-      border-radius: 1px
-      color: $qqc-color-text
-      cursor: pointer
-  dt
-    color: $color-dark-grey
-    font-family: $qqc-font-family-heading
-    font-weight: 300
-    font-size: $um-font-size-subheading
-    margin-bottom: $qqc-blh
-    padding-left: 10px
-  .region
-    float: left
-    margin-left: $qqc-gutter
-    border-left: 1px solid $um-border-color-medium
-    padding-left: $qqc-gutter / 2
-    &:first-child
-      margin-left: 0
-  .note
-    clear: both
-    border: none
-    border-radius: 2px
-    background-color: $color-light-grey
-    display: block
-    padding: 10px $qqc-blh
-    font-size: rem-calc(14)
-    font-weight: 300
-  @media all and (max-width: $qqc-mq-mobile-landscape)
-    .note, .regions, .closePanel
-      display: none
-    h3
-      margin: 0
-      padding: 0
-      border: none
-  @media all and (max-width: $qqc-mq-mobile)
-    h3
-      font-size: $um-font-size-heading-mobile
+    
+  h2
+    font-size: rem-calc(16px)
+    font-weight: 500
+    letter-spacing: 0
+    
+  .groups
+    list-style: none
+    .group
+      width: 16%
+      float: left
+      margin-right: 16px
+      border-left: 1px solid #f6f6f6
+      padding-left: 16px
+      margin-bottom: 12px
+      
+      h3
+        font-size: rem-calc(20px)
+        margin: 0
+        margin-bottom: 16px
+        padding-bottom: 8px
+        border-bottom: 1px solid #ebebeb
+      .countries
+        margin-left: 0
+        margin-bottom: rem-calc(4)
+        font-size: rem-calc(16)
+        list-style: none
+        a
+          padding: rem-calc(6) rem-calc(10)
+          //line-height: 1.6
+          color: $color-blue
+          font-weight: 300
+        a:hover
+          background: $qqc-color-heading
+          border-radius: 1px
+          color: $qqc-color-text
+          cursor: pointer
+//        
+//        
+//  dt
+//    color: $color-dark-grey
+//    font-family: $qqc-font-family-heading
+//    font-weight: 300
+//    font-size: $um-font-size-subheading
+//    margin-bottom: $qqc-blh
+//    padding-left: 10px
+//  .region
+//    float: left
+//    margin-left: $qqc-gutter
+//    border-left: 1px solid $um-border-color-medium
+//    padding-left: $qqc-gutter / 2
+//    &:first-child
+//      margin-left: 0
+//  .note
+//    clear: both
+//    border: none
+//    border-radius: 2px
+//    background-color: $color-light-grey
+//    display: block
+//    padding: 10px $qqc-blh
+//    font-size: rem-calc(14)
+//    font-weight: 300
+//  @media all and (max-width: $qqc-mq-mobile-landscape)
+//    .note, .regions, .closePanel
+//      display: none
+//    h3
+//      margin: 0
+//      padding: 0
+//      border: none
+//  @media all and (max-width: $qqc-mq-mobile)
+//    h3
+//      font-size: $um-font-size-heading-mobile
 
 // Autocompleter [not namespaced][uses $um- vars]
 .autocomplete
