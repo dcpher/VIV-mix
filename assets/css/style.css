@@ -4274,13 +4274,14 @@ hr {
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-bottom: 10px solid #FFF; }
-  .datepicker .closePanel {
+  .datepicker .close {
     position: absolute;
     top: 16px;
     right: 16px;
     color: #00bae4;
-    font-size: 0.875rem; }
-    .datepicker .closePanel:hover {
+    font-size: 0.875rem;
+    color: #5fc3b1; }
+    .datepicker .close:hover {
       cursor: pointer; }
   .datepicker h3 {
     font-family: "Ubuntu", Helvetica, Arial, sans-serif;
@@ -4299,7 +4300,7 @@ hr {
     position: absolute;
     left: 0;
     top: -10px;
-    color: #00bae4;
+    color: #5fc3b1;
     font-size: 2.25rem; }
     .datepicker .datepicker-show-past-month:hover, .datepicker .datepicker-show-next-month:hover {
       cursor: pointer; }
@@ -4325,7 +4326,7 @@ hr {
       .datepicker table tr td a, .datepicker table tr th a {
         font-size: 1rem;
         padding: 0.625rem 0.625rem;
-        color: #00bae4;
+        color: #5fc3b1;
         display: block;
         text-align: center;
         line-height: 16px; }
@@ -4336,9 +4337,9 @@ hr {
           color: #FFF;
           text-decoration: none;
           cursor: pointer;
-          background-color: #00bae4; }
+          background-color: #006266; }
     .datepicker table tr td.selected {
-      background: #00bae4; }
+      background: #006266; }
       .datepicker table tr td.selected a {
         color: #FFF; }
     .datepicker table tr td.disabled {
@@ -4349,7 +4350,7 @@ hr {
       font-weight: 300;
       text-align: center; }
   .datepicker td.inSelectionRange a, .datepicker td.selectedCompanion a {
-    background: #005581;
+    background: #5fc3b1;
     color: #FFF; }
   @media all and (max-width: 855px) {
     .datepicker .datepicker-calendar, .datepicker h3, .datepicker .closePanel {
