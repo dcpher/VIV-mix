@@ -4353,7 +4353,7 @@ hr {
     background: #5fc3b1;
     color: #FFF; }
   @media all and (max-width: 855px) {
-    .datepicker .datepicker-calendar, .datepicker h3, .datepicker .closePanel {
+    .datepicker .datepicker-calendar, .datepicker h3, .datepicker .close {
       display: none; }
     .datepicker .datepicker-calendar:nth-child(3) {
       display: block; } }
