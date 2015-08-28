@@ -1,39 +1,19 @@
 // Quick Quote Widget
-      
-.qqw-contained 
-  &.panel
-    +panel($bg: $color-dark-green, $adjust: true)
-    @include grid-column(12)
-  #quick-quote
-    .where
-      @include grid-column(12)
-      @media #{$small-only} 
-        @include grid-column(12)
 
-    .when
-      @include grid-row($behavior: nest-collapse)
-      .input-group  
-        @include grid-column(6)
-        @media #{$small-only} 
-          @include grid-column(12)
-        
-    // will need to change once we add toggles
-    .ages
-      @include grid-column(6 )
-      @media #{$small-only} 
-        @include grid-column(12)
-        
-    .actions
-      @include grid-column(6)
 
       
             
-//          
+// Default Form Styles         
           
-#qqc-form
+#public-insurance-quote-editor
   overflow: auto
   //@include grid-row($behavior: nest)
   
+  .where
+    input[type='text']
+      border-radius: 4px 0px 0px 4px
+    #selected-destinations
+      margin-bottom: 0
   
   .when
     .input-with-icon span
@@ -51,8 +31,8 @@
   h5
     span
       color: $color-white !important
-    padding-bottom: rem-calc(8)
-    border-bottom: 1px solid $color-white
+    //padding-bottom: rem-calc(8)
+    //border-bottom: 1px solid $color-white
     
   label
     font-weight: 300
@@ -60,7 +40,7 @@
     margin-bottom: rem-calc(4)
     
   input[type='text']
-    border-radius: 3px
+    border-radius: 0px
     box-shadow: #ccc 0px 1px 1px 0px inset
     box-sizing: border-box
     height: rem-calc(44)
@@ -80,6 +60,8 @@
   // Internet Explorer 10+
   input[type='text']:-ms-input-placeholder
     color: $color-dark-grey
+  input[type=text], input[type=checkbox], input[type=file], input[type=radio], select
+    margin: 0
 
 
   @media #{$small-only}
@@ -114,7 +96,7 @@
     +gradient-button(darken($color-orange, 5%))
     +border-radius(4px)
     border: 1px solid darken($color-orange, 10%)
-    margin-top: rem-calc(16)
+    //.margin-top: rem-calc(16)
     margin-bottom: 0 //rem-calc(16)
     font-size: rem-calc(20)
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2)
@@ -153,4 +135,80 @@
       right: rem-calc(20)
       bottom: rem-calc(16)
       color: $color-blue
+      
+      
+// QQW on One Line Styles
+.qqw-one-line
+  .panel
+    +border-radius(10px)
+    padding: rem-calc(12px)
+
+  #public-insurance-quote-editor
+    h5
+      font-size: rem-calc(20px)
+      margin-top: 0
+      @media #{$large-up} 
+        display: none
+
+    .where
+      margin-bottom: rem-calc(16px)
+      @media #{$large-up} 
+        width: 32%
+        display: inline-block
+        margin: 0
+        padding: 0
+        float: left
+
+    .when
+      display: block
+      margin-bottom: rem-calc(16px)
+      @media #{$large-up} 
+        width: 28%
+        display: inline-block
+        float: left
+        margin: 0
+        .input-group
+          width: 50%
+          float: left
+          label
+            display: none
+                
+      @media #{$medium-only} 
+        .input-group
+          width: 49%
+          display: inline-block
+          &.departure-date
+            margin-right: 1.25%
+          &.return-date
+            //margin-left: 1%
+          
+      @media #{$small-only}
+        .input-group
+          width: 100%
+
+    // will need to change once we add toggles
+    .ages
+      @media #{$large-up} 
+        width: 14%
+        display: inline-block
+        margin: 0
+        padding: 0
+        float: left
+        select
+          height: rem-calc(44px)
+
+    .actions
+      @media #{$small-up}
+        margin-top: rem-calc(16px)
+      @media #{$large-up} 
+        width: 26%
+        display: inline-block
+        margin-top: 0
+        button
+          margin: 0
+          line-height: 0.85
+          height: rem-calc(44px)
+          +border-radius(0 4px 4px 0)
+      
+        
 

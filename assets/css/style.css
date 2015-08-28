@@ -4046,116 +4046,49 @@ hr {
 .content-item .qqw-contained .blue-panel {
   margin-top: 1.25rem; }
 
-.qqw-contained.panel {
-  border-style: none;
-  border-width: 1px;
-  border-color: #00575b;
-  margin-bottom: 0;
-  padding: 1.25rem;
-  background: #006266;
-  color: #FFFFFF;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-  width: 100%;
-  float: left; }
-  .qqw-contained.panel > :first-child {
-    margin-top: 0; }
-  .qqw-contained.panel > :last-child {
-    margin-bottom: 0; }
-  .qqw-contained.panel h1, .qqw-contained.panel h2, .qqw-contained.panel h3, .qqw-contained.panel h4, .qqw-contained.panel h5, .qqw-contained.panel h6, .qqw-contained.panel p, .qqw-contained.panel li, .qqw-contained.panel dl {
-    color: #FFFFFF; }
-  .qqw-contained.panel h1, .qqw-contained.panel h2, .qqw-contained.panel h3, .qqw-contained.panel h4, .qqw-contained.panel h5, .qqw-contained.panel h6 {
-    line-height: 1; }
-    .qqw-contained.panel h1.subheader, .qqw-contained.panel h2.subheader, .qqw-contained.panel h3.subheader, .qqw-contained.panel h4.subheader, .qqw-contained.panel h5.subheader, .qqw-contained.panel h6.subheader {
-      line-height: 1.4; }
-.qqw-contained #quick-quote .where {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-  width: 100%;
-  float: left; }
-  @media only screen and (max-width: 40em) {
-    .qqw-contained #quick-quote .where {
-      padding-left: 0.75rem;
-      padding-right: 0.75rem;
-      width: 100%;
-      float: left; } }
-.qqw-contained #quick-quote .when {
-  width: auto;
-  margin: 0;
-  max-width: none; }
-  .qqw-contained #quick-quote .when:before, .qqw-contained #quick-quote .when:after {
-    content: " ";
-    display: table; }
-  .qqw-contained #quick-quote .when:after {
-    clear: both; }
-  .qqw-contained #quick-quote .when .input-group {
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
-    width: 50%;
-    float: left; }
-    @media only screen and (max-width: 40em) {
-      .qqw-contained #quick-quote .when .input-group {
-        padding-left: 0.75rem;
-        padding-right: 0.75rem;
-        width: 100%;
-        float: left; } }
-.qqw-contained #quick-quote .ages {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-  width: 50%;
-  float: left; }
-  @media only screen and (max-width: 40em) {
-    .qqw-contained #quick-quote .ages {
-      padding-left: 0.75rem;
-      padding-right: 0.75rem;
-      width: 100%;
-      float: left; } }
-.qqw-contained #quick-quote .actions {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-  width: 50%;
-  float: left; }
-
-#qqc-form {
+#public-insurance-quote-editor {
   overflow: auto; }
-  #qqc-form .when .input-with-icon span {
+  #public-insurance-quote-editor .where input[type='text'] {
+    border-radius: 4px 0px 0px 4px; }
+  #public-insurance-quote-editor .where #selected-destinations {
+    margin-bottom: 0; }
+  #public-insurance-quote-editor .when .input-with-icon span {
     display: none; }
-  #qqc-form #destinations {
+  #public-insurance-quote-editor #destinations {
     margin: 0;
     padding-left: 0; }
-    #qqc-form #destinations li {
+    #public-insurance-quote-editor #destinations li {
       font-weight: 500; }
-      #qqc-form #destinations li:last-child {
+      #public-insurance-quote-editor #destinations li:last-child {
         margin-bottom: 1rem; }
-  #qqc-form h5 {
-    padding-bottom: 0.5rem;
-    border-bottom: 1px solid #FFF; }
-    #qqc-form h5 span {
-      color: #FFF !important; }
-  #qqc-form label {
+  #public-insurance-quote-editor h5 span {
+    color: #FFF !important; }
+  #public-insurance-quote-editor label {
     font-weight: 300;
     color: #FFF;
     margin-bottom: 0.25rem; }
-  #qqc-form input[type='text'] {
-    border-radius: 3px;
+  #public-insurance-quote-editor input[type='text'] {
+    border-radius: 0px;
     box-shadow: #ccc 0px 1px 1px 0px inset;
     box-sizing: border-box;
     height: 2.75rem; }
-  #qqc-form input[type='text']::-webkit-input-placeholder {
+  #public-insurance-quote-editor input[type='text']::-webkit-input-placeholder {
     color: #4d473b; }
-  #qqc-form input[type='text']:-moz-placeholder {
+  #public-insurance-quote-editor input[type='text']:-moz-placeholder {
     color: #4d473b;
     opacity: 1; }
-  #qqc-form input[type='text']::-moz-placeholder {
+  #public-insurance-quote-editor input[type='text']::-moz-placeholder {
     color: #4d473b;
     opacity: 1; }
-  #qqc-form input[type='text']:-ms-input-placeholder {
+  #public-insurance-quote-editor input[type='text']:-ms-input-placeholder {
     color: #4d473b; }
+  #public-insurance-quote-editor input[type=text], #public-insurance-quote-editor input[type=checkbox], #public-insurance-quote-editor input[type=file], #public-insurance-quote-editor input[type=radio], #public-insurance-quote-editor select {
+    margin: 0; }
   @media only screen and (max-width: 40em) {
-    #qqc-form h5 {
+    #public-insurance-quote-editor h5 {
       padding-bottom: 0;
       border-bottom: none; } }
-  #qqc-form #destinations li {
+  #public-insurance-quote-editor #destinations li {
     background-color: #005581;
     display: inline-block;
     padding: 0.25rem 0.625rem;
@@ -4168,16 +4101,16 @@ hr {
     margin-right: 0.5rem;
     margin-top: 0.5rem; }
     @media only screen and (max-width: 40em) {
-      #qqc-form #destinations li {
+      #public-insurance-quote-editor #destinations li {
         padding: 0.5rem 0.875rem; } }
-    #qqc-form #destinations li a {
+    #public-insurance-quote-editor #destinations li a {
       font-size: 1rem;
       font-weight: 500;
       margin-left: 4px; }
       @media only screen and (max-width: 40em) {
-        #qqc-form #destinations li a {
+        #public-insurance-quote-editor #destinations li a {
           font-size: 1.375rem; } }
-  #qqc-form .continue {
+  #public-insurance-quote-editor .continue {
     border-style: solid;
     border-width: 0;
     cursor: pointer;
@@ -4210,7 +4143,6 @@ hr {
     -ms-border-radius: 4px;
     border-radius: 4px;
     border: 1px solid #fcaa29;
-    margin-top: 1rem;
     margin-bottom: 0;
     font-size: 1.25rem;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
@@ -4220,11 +4152,11 @@ hr {
     padding: 0.8125rem 1rem;
     padding-right: 2.75rem;
     text-align: left; }
-    #qqc-form .continue:hover, #qqc-form .continue:focus {
+    #public-insurance-quote-editor .continue:hover, #public-insurance-quote-editor .continue:focus {
       background-color: #065a7a; }
-    #qqc-form .continue:hover, #qqc-form .continue:focus {
+    #public-insurance-quote-editor .continue:hover, #public-insurance-quote-editor .continue:focus {
       color: #FFFFFF; }
-    #qqc-form .continue:hover {
+    #public-insurance-quote-editor .continue:hover {
       background: #fcaa29;
       background: -moz-linear-gradient(top, #fdb038 0%, #fca419 100%);
       background: -webkit-linear-gradient(top, #fdb038 0%, #fca419 100%);
@@ -4234,24 +4166,94 @@ hr {
       border: 1px solid #ef9303;
       border: 1px solid #bd7402;
       text-shadow: 1px 1px 10px rgba(253, 190, 91, 0.5); }
-    #qqc-form .continue span {
+    #public-insurance-quote-editor .continue span {
       display: none; }
-  #qqc-form .input-group {
+  #public-insurance-quote-editor .input-group {
     position: relative; }
-    #qqc-form .input-group .icon-tid-menu:before {
+    #public-insurance-quote-editor .input-group .icon-tid-menu:before {
       content: '\f03a';
       font: normal normal normal 16px/1 FontAwesome;
       position: absolute;
       right: 1.25rem;
       bottom: 1rem;
       color: #00bae4; }
-    #qqc-form .input-group .icon-tid-calendar:before {
+    #public-insurance-quote-editor .input-group .icon-tid-calendar:before {
       content: '\f073';
       font: normal normal normal 16px/1 FontAwesome;
       position: absolute;
       right: 1.25rem;
       bottom: 1rem;
       color: #00bae4; }
+
+.qqw-one-line .panel {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  padding: 0.75rem; }
+.qqw-one-line #public-insurance-quote-editor h5 {
+  font-size: 1.25rem;
+  margin-top: 0; }
+  @media only screen and (min-width:64.063em) {
+    .qqw-one-line #public-insurance-quote-editor h5 {
+      display: none; } }
+.qqw-one-line #public-insurance-quote-editor .where {
+  margin-bottom: 1rem; }
+  @media only screen and (min-width:64.063em) {
+    .qqw-one-line #public-insurance-quote-editor .where {
+      width: 32%;
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      float: left; } }
+.qqw-one-line #public-insurance-quote-editor .when {
+  display: block;
+  margin-bottom: 1rem; }
+  @media only screen and (min-width:64.063em) {
+    .qqw-one-line #public-insurance-quote-editor .when {
+      width: 28%;
+      display: inline-block;
+      float: left;
+      margin: 0; }
+      .qqw-one-line #public-insurance-quote-editor .when .input-group {
+        width: 50%;
+        float: left; }
+        .qqw-one-line #public-insurance-quote-editor .when .input-group label {
+          display: none; } }
+  @media only screen and (min-width:40.063em) and (max-width:64em) {
+    .qqw-one-line #public-insurance-quote-editor .when .input-group {
+      width: 49%;
+      display: inline-block; }
+      .qqw-one-line #public-insurance-quote-editor .when .input-group.departure-date {
+        margin-right: 1.25%; } }
+  @media only screen and (max-width: 40em) {
+    .qqw-one-line #public-insurance-quote-editor .when .input-group {
+      width: 100%; } }
+@media only screen and (min-width:64.063em) {
+  .qqw-one-line #public-insurance-quote-editor .ages {
+    width: 14%;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    float: left; }
+    .qqw-one-line #public-insurance-quote-editor .ages select {
+      height: 2.75rem; } }
+@media only screen {
+  .qqw-one-line #public-insurance-quote-editor .actions {
+    margin-top: 1rem; } }
+@media only screen and (min-width:64.063em) {
+  .qqw-one-line #public-insurance-quote-editor .actions {
+    width: 26%;
+    display: inline-block;
+    margin-top: 0; }
+    .qqw-one-line #public-insurance-quote-editor .actions button {
+      margin: 0;
+      line-height: 0.85;
+      height: 2.75rem;
+      -webkit-border-radius: 0 4px 4px 0;
+      -moz-border-radius: 0 4px 4px 0;
+      -ms-border-radius: 0 4px 4px 0;
+      border-radius: 0 4px 4px 0; } }
 
 .datepicker {
   background: #fff;
