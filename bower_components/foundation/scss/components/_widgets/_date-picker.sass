@@ -9,8 +9,9 @@
   box-shadow: $dp-box-shadow
   font-family: $qqc-font-family-heading
   +qqc-popout-caret
-  .closePanel
+  .close
     +qqc-close-button
+    color: $color-green
   h3
     +qqc-popout-header
   .datepicker-calendars
@@ -21,7 +22,7 @@
     position: absolute
     left: 0
     top: -10px
-    color: $color-blue
+    color: $color-green
     font-size: rem-calc(36)
     &:hover
       cursor: pointer
@@ -49,7 +50,7 @@
         a
           font-size: rem-calc(16)
           padding: rem-calc(10) rem-calc(10)
-          color: $color-blue
+          color: $color-green
           display: block
           text-align: center
           line-height: 16px
@@ -60,10 +61,10 @@
             color: $color-white
             text-decoration: none
             cursor: pointer
-            background-color: $color-blue
+            background-color: $color-dark-green
         
       td.selected
-        background: $color-blue
+        background: $color-dark-green
         a
           color: $color-white
       td.disabled
@@ -76,7 +77,7 @@
     
   td.inSelectionRange a,
   td.selectedCompanion a
-    background: $color-dark-blue
+    background: $color-green
     color: $color-white
   @media all and (max-width: $qqc-mq-datepicker-collapse)
     .datepicker-calendar, h3, .closePanel
