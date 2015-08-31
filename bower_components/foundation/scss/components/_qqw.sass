@@ -143,6 +143,12 @@
     +border-radius(10px)
     padding: rem-calc(12px)
 
+  .pickerInput,
+  .departure-date-input,
+  .return-date-input,
+  #ActiveQuoteDto_TravellerTypeId
+    font-size: rem-calc(14)
+
   #public-insurance-quote-editor
     h5
       font-size: rem-calc(20px)
@@ -242,17 +248,61 @@
             color: $color-white
 
 .uber-menu
+  margin-right: rem-calc(15)
+
   button.button-tertiary.close
-    display: none
-  .groups
+    position: absolute
+    top: rem-calc(10)
+    right: rem-calc(10)
+    padding: 0
     margin: 0
-    .group
-      min-width: rem-calc(140)
+    background: none
+    border: none
+    line-height: 1
+    text-shadow: none
+    color: $color-mid-grey
+    &:hover
+      color: darken($color-mid-grey, 30%)
+
+    &::before
+      display: inline-block
+      padding: rem-calc(4)
+      content: '\00D7'
+    &::after
+      display: none
+
+    span
+      display: none
+
+  ul.groups
+    margin: 0
+
+    li.group
+      width: 17.5%
+      min-width: rem-calc(100)
+      &:first-child
+        border-left: none
+      &:last-child
+        margin-right: 0
+
       h3
-        font-size: rem-calc(16)
-  .countries
-    .country
-      font-size: rem-calc(14)
-      margin-bottom: rem-calc(10)
+        font-size: rem-calc(18)
+
+      li.country
+        padding: rem-calc(4 0 4 6)
+        font-size: rem-calc(14)
+        line-height: rem-calc(18)
+        margin-bottom: rem-calc(2)
+        cursor: pointer
+        &:hover
+          box-sizing: border-box
+          border-radius: rem-calc(2)
+          color: $color-white
+          background-color: $color-dark-green
+
   .uber-menu-footer
     clear: both
+
+ul.autocomplete
+  li.selected
+    background-color: $color-dark-green
