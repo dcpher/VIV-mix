@@ -8,7 +8,8 @@
 
   .where
     input[type='text']
-      border-radius: 4px 0px 0px 4px
+      @media #{$large-up}
+        border-radius: 4px 0px 0px 4px
     #selected-destinations
       margin-bottom: 0
 
@@ -143,12 +144,6 @@
     +border-radius(10px)
     padding: rem-calc(12px)
 
-  .pickerInput,
-  .departure-date-input,
-  .return-date-input,
-  #ActiveQuoteDto_TravellerTypeId
-    font-size: rem-calc(14)
-
   #public-insurance-quote-editor
     h5
       font-size: rem-calc(20px)
@@ -238,12 +233,12 @@
         border-radius: rem-calc(2)
         font-size: rem-calc(13)
         color: $color-white
-        text-shadow: 1px 1px 1px darken($color-green, 20%)
         background-color: $color-green
 
         > a
-          margin-left: rem-calc(4)
-          color: #ddd
+          font-size: rem-calc(16)
+          margin-left: rem-calc(6)
+          color: $color-dark-green
           &:hover
             color: $color-white
 
@@ -306,3 +301,8 @@
 ul.autocomplete
   li.selected
     background-color: $color-dark-green
+
+.datepicker.right
+  &::before
+    left: auto
+    right: rem-calc(16)
