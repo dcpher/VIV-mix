@@ -7,11 +7,14 @@
   //@include grid-row($behavior: nest)
 
   .where
-    input[type='text']
+    .pickerInput
       @media #{$large-up}
         border-radius: 4px 0px 0px 4px
     #selected-destinations
       margin-bottom: 0
+
+  #departure-date-input
+    margin-bottom: rem-calc(15)
 
   .when
     .input-with-icon span
