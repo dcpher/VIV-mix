@@ -139,15 +139,17 @@
 
 
 // QQW on One Line Styles
-.qqw-one-line
+.qqw-contained
   &.row
-    @media #{$large-up}
-      margin-bottom: rem-calc(40)
   .panel
     +border-radius(10px)
     padding: rem-calc(12px)
-
   #public-insurance-quote-editor
+    position: relative
+    margin-bottom: rem-calc(40)
+    padding: rem-calc(14)
+    border-radius: rem-calc(6)
+    background-color: $color-dark-green
     h5
       font-size: rem-calc(20px)
       margin-top: 0
@@ -222,19 +224,19 @@
       margin-left: 0
       @media #{$large-up}
         position: absolute
-        top: rem-calc(86)
+        top: rem-calc(90)
         left: 0
         right: 0
         padding-top: rem-calc(8)
-        padding-left: rem-calc(12)
-        border-radius: rem-calc(0 0 10 10)
+        padding-left: rem-calc(14)
+        border-radius: rem-calc(0 0 6 6)
         background-color: $color-dark-green
 
       > li
         display: inline-block !important
         margin: rem-calc(0 10 10 0)
         padding: rem-calc(4 8)
-        border-radius: rem-calc(2)
+        border-radius: rem-calc(3)
         font-size: rem-calc(13)
         color: $color-white
         background-color: $color-green
