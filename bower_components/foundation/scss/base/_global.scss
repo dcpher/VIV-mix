@@ -1,0 +1,20 @@
+// Vivamos global base styling
+
+body {
+    color: $color-dark-grey;
+}
+
+h1, h2 {
+    letter-spacing: rem-calc(-2);
+    margin-bottom: rem-calc(32);
+}
+
+h3, h4 {
+    letter-spacing: rem-calc(-1);
+    margin-bottom: rem-calc(16);
+}
+
+h5, h6 {
+    font-weight: 300;
+    margin-bottom: rem-calc(8);
+}

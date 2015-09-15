@@ -1,18 +1,4 @@
 // typography
-
-h1, h2
-  letter-spacing: rem-calc(-4)
-  margin-bottom: rem-calc(32)
-  
-  
-h3, h4
-  letter-spacing: rem-calc(-1)
-  margin-bottom: rem-calc(16)
-  
-h5, h6
-  font-weight: 300
-  margin-bottom: rem-calc(8)
-  
 p
   &.lead
     font-size: rem-calc(22)
@@ -23,17 +9,15 @@ p
     margin-top: rem-calc(10)
   strong
     font-weight: 500
-    
-// List styles    
+
+// List styles
 ul
   li
     margin-bottom: rem-calc(12)
-  
+
 // Set font up colours
-  
+
 h1, h2, h3, h4, h5, div, p, b, span
-  
-  color: $color-dark-grey
 
   &.blue
     color: $color-blue
@@ -46,17 +30,17 @@ h1, h2, h3, h4, h5, div, p, b, span
   &.red
     color: $color-red
   &.dark-red
-    color: $color-dark-red    
+    color: $color-dark-red
   &.white
     color: $color-white
-  
-// Set selection hightlight colours      
+
+// Set selection hightlight colours
 ::-moz-selection  /* Code for Firefox */
   color: $color-white
   background: $color-blue
 
-::selection 
-  color: $color-white 
+::selection
+  color: $color-white
   background: $color-blue
 
 
@@ -65,7 +49,7 @@ h1, h2, h3, h4, h5, div, p, b, span
     //font-size: rem-calc(110)
     //line-height: 1.0
     //letter-spacing: rem-calc(-5)
-  
+
 @media #{$small-only}
   h1, h2
     letter-spacing: rem-calc(-1)

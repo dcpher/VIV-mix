@@ -1,0 +1,41 @@
+// VIVAMOS Base Style Imports
+// This CSS follows the SMACCS methodology - please familiarise yourself with SMACCS before making changes.
+// http://www.smaccs.com
+
+// Variables
+@import "theme/variables";
+
+// Libraries
+@import "libs/mixins";
+
+// Legacy
+/* Foundation: needs to be reimplmented with an unmodified install */
+@import "legacy/foundation";
+/* custom components */
+@import "legacy/components/font";
+@import "legacy/components/alert-box";
+@import "legacy/components/type";
+@import "legacy/components/buttons";
+@import "legacy/components/panel";
+@import "legacy/components/full-width-img";
+@import "legacy/components/header-panel";
+@import "legacy/components/content-panel";
+@import "legacy/components/nav-bar";
+@import "legacy/components/breadcrumb";
+@import "legacy/components/follow-links";
+@import "legacy/components/forms";
+@import "legacy/components/footer";
+@import "legacy/components/hr";
+@import "legacy/components/home-page";
+@import "legacy/components/seo-page";
+@import "legacy/components/qqw";
+@import "legacy/components/cms_responsive_qqc";
+
+// Base
+@import "base/global";
+
+// Modules
+
+// Layouts
+
+// States
