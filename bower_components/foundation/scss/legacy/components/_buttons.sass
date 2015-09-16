@@ -8,57 +8,57 @@
   padding: rem-calc(13) rem-calc(16)
   padding-right: rem-calc(44)
   text-align: left
-  
+
   &.prefix, &.postfix
     padding-left: rem-calc(12)
     text-align: left
     &:after
       bottom: rem-calc(12)
       right: rem-calc(16)
-    
+
   &.expand
     padding: inherit rem-calc(16)
-    
+
   &.primary
     +gradient-button(darken($color-orange, 7%))
-    &:hover, &:active 
+    &:hover, &:active
       +gradient-button(darken($color-orange, 14%))
-      
+
   &.secondary
     +gradient-button($color-light-grey)
     color: $color-dark-grey
-    &:hover, &:active 
+    &:hover, &:active
       +gradient-button(darken($color-light-grey, 10%))
-      
+
   &.disabled
     +gradient-button($color-mid-grey)
     color: darken($color-light-grey, 8%)
-    &:hover, &:active 
+    &:hover, &:active
       +gradient-button(darken($color-mid-grey, 10%))
-    
+
   @media #{$small-only}
     &.small-expanded
       width: 100%
-  
+
   &:after
     content: '\f061'
     font: normal normal normal 14px/1 FontAwesome
     position: absolute
     bottom: rem-calc(17)
     right: rem-calc(16)
-  
+
   &:hover, &:active
     text-decoration: none
     text-shadow: 1px 1px 10px rgba($color-dark-grey, 0.2)
-  
-  // Button Sizes    
+
+  // Button Sizes
   &.large
     font-size: rem-calc(22)
     padding: rem-calc(16) rem-calc(20)
     padding-right: rem-calc(54)
     &:after
       bottom: rem-calc(22)
-    
+
   &.small
     font-size: rem-calc(14)
     padding: rem-calc(10) rem-calc(12)
@@ -69,61 +69,61 @@
       font-size: 12px
 
   // TID Button colours
-  
+
   // Light
- 
+
   &.red
     +gradient-button(darken($color-red, 5%))
-    &:hover, &:active 
+    &:hover, &:active
       +gradient-button(darken($color-red, 7%))
-        
+
   &.blue
     +gradient-button($color-blue)
-    &:hover, &:active 
-      +gradient-button(darken($color-blue, 7%))      
-      
+    &:hover, &:active
+      +gradient-button(darken($color-blue, 7%))
+
   &.green
     +gradient-button($color-green)
-    &:hover, &:active 
+    &:hover, &:active
       +gradient-button(darken($color-green, 7%))
-      
+
   &.orange
     +gradient-button($color-orange)
-    &:hover, &:active 
+    &:hover, &:active
       +gradient-button(darken($color-orange, 7%))
 
   // Dark
- 
+
   &.dark-red
     +gradient-button(darken($color-dark-red, 5%))
-    &:hover, &:active 
+    &:hover, &:active
       +gradient-button(darken($color-dark-red, 10%))
-        
+
   &.dark-blue
     +gradient-button($color-dark-blue)
     &:hover, &:active
       +gradient-button(darken($color-dark-blue, 10%))
-      
+
   &.dark-green
   +gradient-button($color-dark-green)
-  &:hover, &:active 
+  &:hover, &:active
     +gradient-button(darken($color-dark-green, 10%))
-      
-  
-      
-  // Additional Button Colours   
-        
+
+
+
+  // Additional Button Colours
+
   &.grey
     +gradient-button($color-dark-grey)
-    &:hover 
+    &:hover
       +gradient-button(darken($color-dark-grey, 10%))
-        
+
   &.light-grey
     +gradient-button($color-light-grey)
     color: $color-dark-grey
-    &:hover 
+    &:hover
       +gradient-button(darken($color-light-grey, 10%))
-      
+
 a
   &.button
     +transition
@@ -141,7 +141,6 @@ span
     right: rem-calc(20)
     top: rem-calc(2)
     color: $color-white
-    
 
-    
-  
+
+

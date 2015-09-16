@@ -15,111 +15,125 @@ $qqw-color-mid-grey: #777;
 $qqw-color-green: #5fc3b1;
 $qqw-color-dark-green: #006266;
 
+@mixin qqw-gradient-button($color) {
+
+    $color-darken: darken($color, 3%);
+    $color-lighten: lighten($color, 3%);
+
+    background: $color;
+    background: -moz-linear-gradient(top,  $color-lighten 0%, $color-darken 100%);
+    background: -webkit-linear-gradient(top,  $color-lighten 0%,$color-darken 100%);
+    background: -o-linear-gradient(top,  $color-lighten 0%,$color-darken 100%);
+    background: -ms-linear-gradient(top,  $color-lighten 0%,$color-darken 100%);
+    background: linear-gradient(to bottom,  $color-lighten 0%,$color-darken 100%);
+    border: 1px solid darken($color, 10%);
+}
+
 #public-insurance-quote-editor {
 
   .where {
     .pickerInput {
       @media only screen and (min-width: $large-mq-start) {
-        border-radius: 4px 0px 0px 4px
+        border-radius: 4px 0px 0px 4px;
       }
     }
     #selected-destinations {
-      margin-bottom: 0
+      margin-bottom: 0;
     }
   }
 
   #departure-date-input {
-    margin-bottom: rem-calc(15)
+    margin-bottom: 15px;
   }
 
   .when {
     .input-with-icon span {
-      display: none
+      display: none;
     }
   }
 
   // destinations ul
   #destinations {
-    margin: 0
-    padding-left: 0
+    margin: 0;
+    padding-left: 0;
     li {
-      font-weight: 500
+      font-weight: 500;
       &:last-child {
-        margin-bottom: rem-calc(16)
+        margin-bottom: 16px;
       }
     }
   }
 
   h5 {
     span {
-      color: $qqw-color-white !important
+      color: $qqw-color-white !important;
     }
   }
 
   label {
-    font-weight: 300
-    color: $qqw-color-white
-    margin-bottom: rem-calc(4)
+    font-weight: 300;
+    color: $qqw-color-white;
+    margin-bottom: 4px;
   }
 
   input[type='text'] {
-    border-radius: 0px
-    box-shadow: #ccc 0px 1px 1px 0px inset
-    box-sizing: border-box
-    height: rem-calc(44)
+    border-radius: 0px;
+    box-shadow: #ccc 0px 1px 1px 0px inset;
+    box-sizing: border-box;
+    height: 44px;
   }
 
   //Placeholder color override
   //WebKit browsers
   input[type='text']::-webkit-input-placeholder {
-    color: $qqw-color-dark-grey
+    color: $qqw-color-dark-grey;
   }
   // Mozilla Firefox 4 to 18
   input[type='text']:-moz-placeholder {
-    color: $qqw-color-dark-grey
-    opacity:  1
+    color: $qqw-color-dark-grey;
+    opacity:  1;
   }
   //Mozilla Firefox 19+
   input[type='text']::-moz-placeholder {
-    color: $qqw-color-dark-grey
-    opacity:  1
+    color: $qqw-color-dark-grey;
+    opacity:  1;
   }
   // Internet Explorer 10+
   input[type='text']:-ms-input-placeholder {
-    color: $qqw-color-dark-grey
+    color: $qqw-color-dark-grey;
   }
   input[type=text], input[type=checkbox], input[type=file], input[type=radio], select {
-    margin: 0
+    margin: 0;
   }
 
 
   @media only screen and (max-width: $small-mq-end) {
     h5 {
-      padding-bottom: rem-calc(0)
-      border-bottom: none
+      padding-bottom: 0;
+      border-bottom: none;
     }
   }
 
   // destinations tags need updating once scripts are in
   #destinations {
     li {
-      background-color: $qqw-color-dark-blue
-      display: inline-block
-      padding: rem-calc(4) rem-calc(10)
-      font-weight: 300
-      font-size: rem-calc(16)
-      +border-radius(2px)
-      margin-right: rem-calc(8)
-      margin-top: rem-calc(8)
+      background-color: $qqw-color-dark-blue;
+      display: inline-block;
+      padding: 4px 10px;
+      font-weight: 300;
+      font-size: 16px;
+      border-radius: 2px;
+      margin-right: 8px;
+      margin-top: 8px;
       @media only screen and (max-width: $small-mq-end) {
-        padding: rem-calc(8) rem-calc(14)
+        padding: 8px 14px;
       }
       a {
-        font-size: rem-calc(16)
-        font-weight: 500
-        margin-left: 4px
+        font-size: 16px;
+        font-weight: 500;
+        margin-left: 4px;
         @media only screen and (max-width: $small-mq-end) {
-          font-size: rem-calc(22)
+          font-size: 22px;
         }
       }
     }
@@ -127,50 +141,49 @@ $qqw-color-dark-green: #006266;
 
   // submit button
   .continue {
-    @include button
-    +gradient-button(darken($qqw-color-orange, 5%))
-    +border-radius(4px)
-    border: 1px solid darken($qqw-color-orange, 10%)
+    @include qqw-gradient-button(darken($qqw-color-orange, 5%));
+    border-radius: 4px;
+    border: 1px solid darken($qqw-color-orange, 10%);
     //.margin-top: rem-calc(16)
-    margin-bottom: 0 //rem-calc(16)
-    font-size: rem-calc(20)
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2)
-    cursor: pointer
-    position: relative
-    width: 100%
-    padding: rem-calc(13) rem-calc(16)
-    padding-right: rem-calc(44)
-    text-align: left
+    margin-bottom: 0 ;//rem-calc(16)
+    font-size: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    padding: 13px 16px;
+    padding-right: 44px;
+    text-align: left;
     &:hover {
-      +gradient-button(darken($qqw-color-orange, 10%))
-      border: 1px solid darken($qqw-color-orange, 30%)
-      text-shadow: 1px 1px 10px rgba($qqw-color-orange, 0.5)
+      @include qqw-gradient-button(darken($qqw-color-orange, 10%));
+      border: 1px solid darken($qqw-color-orange, 30%);
+      text-shadow: 1px 1px 10px rgba($qqw-color-orange, 0.5);
     }
     // Hide the default Arrow
     span {
-      display: none
+      display: none;
     }
   }
 
   // QQW icon styles
   .input-group {
-    position: relative
+    position: relative;
     .icon-tid-menu:before {
-      content: '\f03a'
-      font: normal normal normal 16px/1 FontAwesome
-      position: absolute
-      right: rem-calc(20)
-      bottom: rem-calc(16)
-      color: $qqw-color-blue
+      content: '\f03a';
+      font: normal normal normal 16px/1 FontAwesome;
+      position: absolute;
+      right: 20px;
+      bottom: 16px;
+      color: $qqw-color-blue;
     }
 
     .icon-tid-calendar:before {
-      content: '\f073'
-      font: normal normal normal 16px/1 FontAwesome
-      position: absolute
-      right: rem-calc(20)
-      bottom: rem-calc(16)
-      color: $qqw-color-blue
+      content: '\f073';
+      font: normal normal normal 16px/1 FontAwesome;
+      position: absolute;
+      right: 20px;
+      bottom: 16px;
+      color: $qqw-color-blue;
     }
   }
 }
@@ -178,74 +191,74 @@ $qqw-color-dark-green: #006266;
 // QQW on One Line Styles
 .qqw-contained {
   .panel {
-    +border-radius(10px)
-    padding: rem-calc(12px)
+    border-radius: 10px;
+    padding: 12px;
   }
   #public-insurance-quote-editor {
-    position: relative
-    margin-bottom: rem-calc(40)
-    padding: rem-calc(14)
-    border-radius: rem-calc(6)
-    background-color: $qqw-color-dark-green
+    position: relative;
+    margin-bottom: 40px;
+    padding: 14px;
+    border-radius: 6px;
+    background-color: $qqw-color-dark-green;
     h5 {
-      font-size: rem-calc(20px)
-      margin-top: 0
+      font-size: 20px;
+      margin-top: 0;
       @media only screen and (min-width: $large-mq-start) {
-        margin-bottom: rem-calc(0)
+        margin-bottom: 0;
       }
     }
 
     .where {
-      margin-bottom: rem-calc(16px)
+      margin-bottom: 16px;
       @media only screen and (min-width: $large-mq-start) {
-        width: 32%
-        display: inline-block
-        margin: 0
-        padding: 0
-        float: left
+        width: 32%;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        float: left;
       }
     }
 
     .when {
-      display: block
-      margin-bottom: rem-calc(16px)
+      display: block;
+      margin-bottom: 16px;
       @media only screen and (min-width: $large-mq-start) {
-        width: 28%
-        display: inline-block
-        float: left
-        margin: 0
+        width: 28%;
+        display: inline-block;
+        float: left;
+        margin: 0;
         .input-group {
-          width: 50%
-          float: left
+          width: 50%;
+          float: left;
           label {
-            display: none
+            display: none;
           }
         }
       }
 
       @media only screen and (min-width: $medium-mq-start) {
         .input-group {
-          width: 49%
-          display: inline-block
+          width: 49%;
+          display: inline-block;
           &.departure-date {
-            margin-right: 1.25%
+            margin-right: 1.25%;
           }
         }
       }
 
       @media only screen and (min-width: $large-mq-start) {
         .input-group {
-          width: 50%
-          display: inline-block
+          width: 50%;
+          display: inline-block;
           &.departure-date {
-            margin-right: 0
+            margin-right: 0;
           }
         }
       }
 
       @media only screen and (max-width: $small-mq-end) {
         .input-group {
-          width: 100%
+          width: 100%;
         }
       }
     }
@@ -253,65 +266,65 @@ $qqw-color-dark-green: #006266;
     // will need to change once we add toggles
     .ages {
       @media only screen and (min-width: $large-mq-start) {
-        width: 14%
-        display: inline-block
-        margin: 0
-        padding: 0
-        float: left
+        width: 14%;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        float: left;
         select {
-          height: rem-calc(44px)
+          height: 44px;
         }
       }
     }
 
     .actions {
-      margin-top: rem-calc(16px)
+      margin-top: 16px;
       @media only screen and (min-width: $large-mq-start) {
-        width: 26%
-        display: inline-block
-        margin-top: 0
-        padding-top: rem-calc(30)
+        width: 26%;
+        display: inline-block;
+        margin-top: 0;
+        padding-top: 30px;
         button {
-          margin: 0
-          line-height: 0.85
-          height: rem-calc(44px)
-          +border-radius(0 4px 4px 0)
+          margin: 0;
+          line-height: 0.85;
+          height: 44px;
+          border-radius: 0 4px 4px 0;
         }
       }
     }
 
     #quote-destination {
-      position: inherit
+      position: inherit;
     }
 
     #selected-destinations {
-      margin-left: 0
+      margin-left: 0;
       @media only screen and (min-width: $large-mq-start) {
-        position: absolute
-        top: rem-calc(90)
-        left: 0
-        right: 0
-        padding-top: rem-calc(8)
-        padding-left: rem-calc(14)
-        border-radius: rem-calc(0 0 6 6)
-        background-color: $qqw-color-dark-green
+        position: absolute;
+        top: 90px;
+        left: 0;
+        right: 0;
+        padding-top: 8px;
+        padding-left: 14px;
+        border-radius: 0 0 6px 6px;
+        background-color: $qqw-color-dark-green;
       }
 
       > li {
-        display: inline-block !important
-        margin: rem-calc(0 10 10 0)
-        padding: rem-calc(4 8)
-        border-radius: rem-calc(3)
-        font-size: rem-calc(13)
-        color: $qqw-color-white
-        background-color: $qqw-color-green
+        display: inline-block !important;
+        margin: 0 10px 10px 0;
+        padding: 4px 8px;
+        border-radius: 3px;
+        font-size: 13px;
+        color: $qqw-color-white;
+        background-color: $qqw-color-green;
 
         > a {
-          font-size: rem-calc(16)
-          margin-left: rem-calc(6)
-          color: $qqw-color-dark-green
+          font-size: 16px;
+          margin-left: 6px;
+          color: $qqw-color-dark-green;
           &:hover {
-            color: $qqw-color-white
+            color: $qqw-color-white;
           }
         }
       }
@@ -320,84 +333,84 @@ $qqw-color-dark-green: #006266;
 }
 
 .uber-menu {
-  margin-right: rem-calc(15)
+  margin-right: 15px;
 
   button.button-tertiary.close {
-    position: absolute
-    top: rem-calc(10)
-    right: rem-calc(10)
-    padding: 0
-    margin: 0
-    background: none
-    border: none
-    line-height: 1
-    text-shadow: none
-    color: $qqw-color-mid-grey
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 0;
+    margin: 0;
+    background: none;
+    border: none;
+    line-height: 1;
+    text-shadow: none;
+    color: $qqw-color-mid-grey;
     &:hover {
-      color: darken($qqw-color-mid-grey, 30%)
+      color: darken($qqw-color-mid-grey, 30%);
     }
 
     &::before {
-      display: inline-block
-      padding: rem-calc(4)
-      content: '\00D7'
+      display: inline-block;
+      padding: 4px;
+      content: '\00D7';
     }
     &::after {
-      display: none
+      display: none;
     }
 
     span {
-      display: none
+      display: none;
     }
   }
 
   ul.groups {
-    margin: 0
+    margin: 0;
 
     li.group {
-      width: 17.5%
-      min-width: rem-calc(100)
+      width: 17.5%;
+      min-width: 100px;
       &:first-child {
-        border-left: none
+        border-left: none;
       }
       &:last-child {
-        margin-right: 0
+        margin-right: 0;
       }
 
       h3 {
-        font-size: rem-calc(18)
+        font-size: 18px;
       }
 
       li.country {
-        padding: rem-calc(4 0 4 6)
-        font-size: rem-calc(14)
-        line-height: rem-calc(18)
-        margin-bottom: rem-calc(2)
-        cursor: pointer
+        padding: 4px 0 4px 6px;
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 2px;
+        cursor: pointer;
         &:hover {
-          box-sizing: border-box
-          border-radius: rem-calc(2)
-          color: $qqw-color-white
-          background-color: $qqw-color-dark-green
+          box-sizing: border-box;
+          border-radius: 2;
+          color: $qqw-color-white;
+          background-color: $qqw-color-dark-green;
         }
       }
     }
   }
 
   .uber-menu-footer {
-    clear: both
+    clear: both;
   }
 }
 
 ul.autocomplete {
   li.selected {
-    background-color: $qqw-color-dark-green
+    background-color: $qqw-color-dark-green;
   }
 }
 
 .datepicker.right {
   &::before {
-    left: auto
-    right: rem-calc(16)
+    left: auto;
+    right: 16px;
   }
 }
