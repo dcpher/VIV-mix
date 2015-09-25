@@ -1,0 +1,20 @@
+.MediaBlock {
+    display: table;
+
+    &--vertical {
+        display: block;
+
+        .MediaBlock-media,
+        .MediaBlock-detail {
+            display: block;
+        }
+    }
+
+    &-media,
+    &-detail {
+        display: table-cell;
+        vertical-align: middle;
+        box-sizing: border-box;
+    }
+
+}

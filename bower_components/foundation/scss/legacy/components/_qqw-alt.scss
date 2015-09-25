@@ -1,416 +1,113 @@
-// Quick Quote Widget
-// Default Form Styles
+// Custom override of the quick quote calculator for the home page
 
-// Note: this file is a non-Foundation variation for use by the eng teams.
+.qqw-alt {
 
-$small-mq-end: 40em;
-$medium-mq-start: 40.063em;
-$large-mq-start: 64.063em;
-$qqw-color-white: #FFF;
-$qqw-color-dark-grey: #4d473b;
-$qqw-color-dark-blue: #005581;
-$qqw-color-blue: #00bae4;
-$qqw-color-orange: #fdbe5b;
-$qqw-color-mid-grey: #777;
-$qqw-color-green: #5fc3b1;
-$qqw-color-dark-green: #006266;
-
-@mixin qqw-gradient-button($color) {
-
-    $color-darken: darken($color, 3%);
-    $color-lighten: lighten($color, 3%);
-
-    background: $color;
-    background: -moz-linear-gradient(top,  $color-lighten 0%, $color-darken 100%);
-    background: -webkit-linear-gradient(top,  $color-lighten 0%,$color-darken 100%);
-    background: -o-linear-gradient(top,  $color-lighten 0%,$color-darken 100%);
-    background: -ms-linear-gradient(top,  $color-lighten 0%,$color-darken 100%);
-    background: linear-gradient(to bottom,  $color-lighten 0%,$color-darken 100%);
-    border: 1px solid darken($color, 10%);
-}
-
-#public-insurance-quote-editor {
-
-  .where {
-    .pickerInput {
-      @media only screen and (min-width: $large-mq-start) {
-        border-radius: 4px 0px 0px 4px;
-      }
-    }
-    #selected-destinations {
-      margin-bottom: 0;
-    }
-  }
-
-  #departure-date-input {
-    margin-bottom: 15px;
-  }
-
-  .when {
-    .input-with-icon span {
-      display: none;
-    }
-  }
-
-  // destinations ul
-  #destinations {
-    margin: 0;
-    padding-left: 0;
-    li {
-      font-weight: 500;
-      &:last-child {
-        margin-bottom: 16px;
-      }
-    }
-  }
-
-  h5 {
-    span {
-      color: $qqw-color-white !important;
-    }
-  }
-
-  label {
-    font-weight: 300;
-    color: $qqw-color-white;
-    margin-bottom: 4px;
-  }
-
-  input[type='text'] {
-    border-radius: 0px;
-    box-shadow: #ccc 0px 1px 1px 0px inset;
-    box-sizing: border-box;
-    height: 44px;
-  }
-
-  //Placeholder color override
-  //WebKit browsers
-  input[type='text']::-webkit-input-placeholder {
-    color: $qqw-color-dark-grey;
-  }
-  // Mozilla Firefox 4 to 18
-  input[type='text']:-moz-placeholder {
-    color: $qqw-color-dark-grey;
-    opacity:  1;
-  }
-  //Mozilla Firefox 19+
-  input[type='text']::-moz-placeholder {
-    color: $qqw-color-dark-grey;
-    opacity:  1;
-  }
-  // Internet Explorer 10+
-  input[type='text']:-ms-input-placeholder {
-    color: $qqw-color-dark-grey;
-  }
-  input[type=text], input[type=checkbox], input[type=file], input[type=radio], select {
-    margin: 0;
-  }
-
-
-  @media only screen and (max-width: $small-mq-end) {
-    h5 {
-      padding-bottom: 0;
-      border-bottom: none;
-    }
-  }
-
-  // destinations tags need updating once scripts are in
-  #destinations {
-    li {
-      background-color: $qqw-color-dark-blue;
-      display: inline-block;
-      padding: 4px 10px;
-      font-weight: 300;
-      font-size: 16px;
-      border-radius: 2px;
-      margin-right: 8px;
-      margin-top: 8px;
-      @media only screen and (max-width: $small-mq-end) {
-        padding: 8px 14px;
-      }
-      a {
-        font-size: 16px;
-        font-weight: 500;
-        margin-left: 4px;
-        @media only screen and (max-width: $small-mq-end) {
-          font-size: 22px;
-        }
-      }
-    }
-  }
-
-  // submit button
-  .continue {
-    @include qqw-gradient-button(darken($qqw-color-orange, 5%));
-    border-radius: 4px;
-    border: 1px solid darken($qqw-color-orange, 10%);
-    //.margin-top: rem-calc(16)
-    margin-bottom: 0 ;//rem-calc(16)
-    font-size: 20px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-    position: relative;
-    width: 100%;
-    padding: 13px 16px;
-    padding-right: 44px;
-    text-align: left;
-    &:hover {
-      @include qqw-gradient-button(darken($qqw-color-orange, 10%));
-      border: 1px solid darken($qqw-color-orange, 30%);
-      text-shadow: 1px 1px 10px rgba($qqw-color-orange, 0.5);
-    }
-    // Hide the default Arrow
-    span {
-      display: none;
-    }
-  }
-
-  // QQW icon styles
-  .input-group {
-    position: relative;
-    .icon-tid-menu:before {
-      content: '\f03a';
-      font: normal normal normal 16px/1 FontAwesome;
-      position: absolute;
-      right: 20px;
-      bottom: 16px;
-      color: $qqw-color-blue;
+    .green-panel {
+        background-color: transparent;
     }
 
-    .icon-tid-calendar:before {
-      content: '\f073';
-      font: normal normal normal 16px/1 FontAwesome;
-      position: absolute;
-      right: 20px;
-      bottom: 16px;
-      color: $qqw-color-blue;
-    }
-  }
-}
-
-// QQW on One Line Styles
-.qqw-contained {
-  .panel {
-    border-radius: 10px;
-    padding: 12px;
-  }
-  #public-insurance-quote-editor {
-    position: relative;
-    margin-bottom: 40px;
-    padding: 14px;
-    border-radius: 6px;
-    background-color: $qqw-color-dark-green;
-    h5 {
-      font-size: 20px;
-      margin-top: 0;
-      @media only screen and (min-width: $large-mq-start) {
-        margin-bottom: 0;
-      }
-    }
-
-    .where {
-      margin-bottom: 16px;
-      @media only screen and (min-width: $large-mq-start) {
-        width: 32%;
-        display: inline-block;
-        margin: 0;
-        padding: 0;
-        float: left;
-      }
-    }
-
-    .when {
-      display: block;
-      margin-bottom: 16px;
-      @media only screen and (min-width: $large-mq-start) {
-        width: 28%;
-        display: inline-block;
-        float: left;
-        margin: 0;
-        .input-group {
-          width: 50%;
-          float: left;
-          label {
+    #quick-quote {
+        > h2 {
             display: none;
-          }
         }
-      }
+    }
 
-      @media only screen and (min-width: $medium-mq-start) {
-        .input-group {
-          width: 49%;
-          display: inline-block;
-          &.departure-date {
-            margin-right: 1.25%;
-          }
+    .input-group {
+        label {
+            display: none;
         }
-      }
+    }
 
-      @media only screen and (min-width: $large-mq-start) {
-        .input-group {
-          width: 50%;
-          display: inline-block;
-          &.departure-date {
-            margin-right: 0;
-          }
+    .pickerInput,
+    .departure-date-input,
+    .return-date-input,
+    .ages select {
+        font-size: rem-calc(14);
+        color: darken($color-green, 20%);
+    }
+
+    #quick-quote {
+        #public-insurance-quote-editor {
+            .departure-date,
+            .return-date {
+                @media #{$medium-only} {
+                    width: 100%;
+                }
+            }
         }
-      }
+    }
 
-      @media only screen and (max-width: $small-mq-end) {
-        .input-group {
-          width: 100%;
+    #public-insurance-quote-editor {
+        background-color: rgba(0, 0, 0, 0.5);
+
+        &:after {
+            content: '';
+            display: table;
+            clear: both;
         }
-      }
-    }
 
-    // will need to change once we add toggles
-    .ages {
-      @media only screen and (min-width: $large-mq-start) {
-        width: 14%;
-        display: inline-block;
-        margin: 0;
-        padding: 0;
-        float: left;
-        select {
-          height: 44px;
+        .qqc-field {
+            @media #{$medium-only} {
+                width: 33%;
+                float: left;
+                padding-right: rem-calc(20);
+                &.when {
+                    margin-bottom: 0;
+                }
+                &.ages {
+                    width: 34%;
+                    padding-right: 0;
+                }
+            }
+
+            > h5 {
+                display: none;
+            }
         }
-      }
-    }
 
-    .actions {
-      margin-top: 16px;
-      @media only screen and (min-width: $large-mq-start) {
-        width: 26%;
-        display: inline-block;
-        margin-top: 0;
-        padding-top: 30px;
-        button {
-          margin: 0;
-          line-height: 0.85;
-          height: 44px;
-          border-radius: 0 4px 4px 0;
+        .actions {
+            @media #{$medium-up} {
+                margin-top: 0;
+                padding-top: 0;
+            }
+            @media #{$medium-only} {
+                float: right;
+                width: 34%;
+                margin-top: rem-calc(17)
+            }
         }
-      }
-    }
 
-    #quote-destination {
-      position: inherit;
-    }
-
-    #selected-destinations {
-      margin-left: 0;
-      @media only screen and (min-width: $large-mq-start) {
-        position: absolute;
-        top: 90px;
-        left: 0;
-        right: 0;
-        padding-top: 8px;
-        padding-left: 14px;
-        border-radius: 0 0 6px 6px;
-        background-color: $qqw-color-dark-green;
-      }
-
-      > li {
-        display: inline-block !important;
-        margin: 0 10px 10px 0;
-        padding: 4px 8px;
-        border-radius: 3px;
-        font-size: 13px;
-        color: $qqw-color-white;
-        background-color: $qqw-color-green;
-
-        > a {
-          font-size: 16px;
-          margin-left: 6px;
-          color: $qqw-color-dark-green;
-          &:hover {
-            color: $qqw-color-white;
-          }
+        .qqc-field {
+            #selected-destinations {
+                top: rem-calc(-50);
+                background-color: transparent;
+            }
         }
-      }
-    }
-  }
-}
 
-.uber-menu {
-  margin-right: 15px;
-
-  button.button-tertiary.close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    padding: 0;
-    margin: 0;
-    background: none;
-    border: none;
-    line-height: 1;
-    text-shadow: none;
-    color: $qqw-color-mid-grey;
-    &:hover {
-      color: darken($qqw-color-mid-grey, 30%);
-    }
-
-    &::before {
-      display: inline-block;
-      padding: 4px;
-      content: '\00D7';
-    }
-    &::after {
-      display: none;
-    }
-
-    span {
-      display: none;
-    }
-  }
-
-  ul.groups {
-    margin: 0;
-
-    li.group {
-      width: 17.5%;
-      min-width: 100px;
-      &:first-child {
-        border-left: none;
-      }
-      &:last-child {
-        margin-right: 0;
-      }
-
-      h3 {
-        font-size: 18px;
-      }
-
-      li.country {
-        padding: 4px 0 4px 6px;
-        font-size: 14px;
-        line-height: 18px;
-        margin-bottom: 2px;
-        cursor: pointer;
-        &:hover {
-          box-sizing: border-box;
-          border-radius: 2;
-          color: $qqw-color-white;
-          background-color: $qqw-color-dark-green;
+        #return-date-input {
+            @media #{$medium-up} {
+                margin-bottom: 0;
+            }
         }
-      }
+
+        #departure-date-input,
+        #return-date-input {
+            @media #{$large-up} {
+                margin-bottom: 0;
+            }
+        }
+
+        .buy-button-primary {
+            font-size: rem-calc(16);
+            border: none;
+            background: #5fc3b1; /* Old browsers */
+            background: -moz-linear-gradient(top,  #5fc3b1 0%, #38b49e 100%); /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5fc3b1), color-stop(100%,#38b49e)); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(top,  #5fc3b1 0%,#38b49e 100%); /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(top,  #5fc3b1 0%,#38b49e 100%); /* Opera 11.10+ */
+            background: -ms-linear-gradient(top,  #5fc3b1 0%,#38b49e 100%); /* IE10+ */
+            background: linear-gradient(to bottom,  #5fc3b1 0%,#38b49e 100%); /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5fc3b1', endColorstr='#38b49e',GradientType=0 ); /* IE6-9 */
+        }
     }
-  }
-
-  .uber-menu-footer {
-    clear: both;
-  }
-}
-
-ul.autocomplete {
-  li.selected {
-    background-color: $qqw-color-dark-green;
-  }
-}
-
-.datepicker.right {
-  &::before {
-    left: auto;
-    right: 16px;
-  }
 }

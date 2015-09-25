@@ -1,0 +1,16 @@
+// Preferably apply to a pseudo element
+// Assign position: relative to parent
+
+@mixin section-triangle($size, $colour) {
+    position: absolute;
+    top: -($size / 2);
+    width: $size;
+    height: $size;
+    left: 50%;
+    margin-left: -($size / 2);
+    background-color: $colour;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    content: '';
+}
