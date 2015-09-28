@@ -1,0 +1,113 @@
+// Custom override of the quick quote calculator for the home page
+
+.qqw-alt {
+
+    .green-panel {
+        background-color: transparent;
+    }
+
+    #quick-quote {
+        > h2 {
+            display: none;
+        }
+    }
+
+    .input-group {
+        label {
+            display: none;
+        }
+    }
+
+    .pickerInput,
+    .departure-date-input,
+    .return-date-input,
+    .ages select {
+        font-size: rem-calc(14);
+        color: darken($color-green, 20%);
+    }
+
+    #quick-quote {
+        #public-insurance-quote-editor {
+            .departure-date,
+            .return-date {
+                @media #{$medium-only} {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    #public-insurance-quote-editor {
+        background-color: rgba(0, 0, 0, 0.5);
+
+        &:after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+
+        .qqc-field {
+            @media #{$medium-only} {
+                width: 33%;
+                float: left;
+                padding-right: rem-calc(20);
+                &.when {
+                    margin-bottom: 0;
+                }
+                &.ages {
+                    width: 34%;
+                    padding-right: 0;
+                }
+            }
+
+            > h5 {
+                display: none;
+            }
+        }
+
+        .actions {
+            @media #{$medium-up} {
+                margin-top: 0;
+                padding-top: 0;
+            }
+            @media #{$medium-only} {
+                float: right;
+                width: 34%;
+                margin-top: rem-calc(17)
+            }
+        }
+
+        .qqc-field {
+            #selected-destinations {
+                top: rem-calc(-50);
+                background-color: transparent;
+            }
+        }
+
+        #return-date-input {
+            @media #{$medium-up} {
+                margin-bottom: 0;
+            }
+        }
+
+        #departure-date-input,
+        #return-date-input {
+            @media #{$large-up} {
+                margin-bottom: 0;
+            }
+        }
+
+        .buy-button-primary {
+            font-size: rem-calc(16);
+            border: none;
+            background: #5fc3b1; /* Old browsers */
+            background: -moz-linear-gradient(top,  #5fc3b1 0%, #38b49e 100%); /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5fc3b1), color-stop(100%,#38b49e)); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(top,  #5fc3b1 0%,#38b49e 100%); /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(top,  #5fc3b1 0%,#38b49e 100%); /* Opera 11.10+ */
+            background: -ms-linear-gradient(top,  #5fc3b1 0%,#38b49e 100%); /* IE10+ */
+            background: linear-gradient(to bottom,  #5fc3b1 0%,#38b49e 100%); /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5fc3b1', endColorstr='#38b49e',GradientType=0 ); /* IE6-9 */
+        }
+    }
+}

@@ -1,0 +1,331 @@
+// Vivamos Insurance Page
+
+.seguroViagem {
+
+    $default-border: 1px solid darken($color-white, 10%);
+
+    &-sprite {
+        background-image: url('/Media/VIV/images/seguro-viagem/viv-insurancepage-sprite@2x.png');
+        background-repeat: no-repeat;
+        background-size: 185px 185px;
+    }
+
+    &-largeCopy {
+        font-size: 20px;
+        line-height: 1.2em;
+    }
+
+    &-subSection {
+        margin-bottom: 40px;
+        padding-bottom: 20px;
+        border-bottom: $default-border;
+    }
+
+    .has-icon-sprite {
+        &:before {
+            @extend .seguroViagem-sprite;
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            width: 50px;
+            height: 50px;
+            content: '';
+        }
+    }
+
+    // Hero section
+
+    &-hero {
+        padding-top: 120px;
+        padding-bottom: 40px;
+        background: url('/Media/VIV/images/seguro-viagem/seguro-viagem-hero-bg-temp.jpg') no-repeat center center;
+        background-size: cover;
+
+        &Title {
+            font-size: 58px;
+            color: $color-white;
+            text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        &Copy {
+            color: $color-white;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        &Qqw {
+            @media #{$large-up} {
+                margin-top: 30px;
+            }
+        }
+    }
+
+    // Features section
+
+    &-features {
+        position: relative;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        background-color: $color-dark-green;
+        &:before {
+            @include section-triangle(30px, $color-dark-green);
+        }
+
+        &Inner {
+            display: table;
+            margin: 0;
+            list-style: none;
+            padding-left: 0;
+
+            > li {
+                position: relative;
+                display: inline-block;
+                width: 100%;
+                margin-bottom: 40px;
+                padding-left: 64px;
+                padding-right: 18px;
+                color: $color-white;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                @media #{$medium-only} {
+                    float: left;
+                    &:nth-child(1),
+                    &:nth-child(2) {
+                        margin-bottom: 35px;
+                    }
+                }
+
+                @media #{$medium-up} {
+                    width: 50%;
+                    margin-bottom: 0;
+                }
+
+                @media #{$large-up} {
+                    display: table-cell;
+                    width: 25%;
+                    margin-bottom: 0;
+                    vertical-align: middle;
+                    &:last-child {
+                        padding-right: 0;
+                    }
+                }
+            }
+        }
+
+        // Icon positioning
+        &Benefits {
+            &:before {
+                background-position: 0 0;
+            }
+        }
+
+        &Assistance {
+            &:before {
+                background-position: -50px 0;
+            }
+        }
+
+        &Travelsmart {
+            &:before {
+                background-position: -100px 0;
+            }
+        }
+
+        &Families {
+            &:before {
+                background-position: 0 -50px;
+            }
+        }
+    }
+
+    // Details section
+
+    &-details {
+        margin-top: 40px;
+
+        &Table {
+            margin-top: 20px;
+            margin-bottom: 40px;
+
+            thead {
+                background-color: transparent;
+            }
+
+            th {
+                font-size: 22px;
+                color: $color-dark-green;
+            }
+
+            tr,
+            tr:nth-child(even) {
+                background-color: transparent;
+            }
+
+            th,
+            td {
+                padding: 16px;
+                border-bottom: $default-border;
+            }
+        }
+
+        // Media Blocks
+        &MediaBlocks {
+            margin-bottom: 10px;
+
+            .MediaBlock {
+                position: relative;
+                margin-bottom: 20px;
+            }
+
+            .MediaBlock-media {
+                height: 220px;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .MediaBlock-detail {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                min-height: 70px;
+                padding: 10px;
+                background-color: $color-green;
+                font-size: 14px;
+                color: $color-white;
+            }
+        }
+
+        &Trekking {
+            .MediaBlock-media {
+                background-image: url('/Media/VIV/images/seguro-viagem/viv-detail-media-01-temp.jpg');
+            }
+        }
+
+        &Diving {
+            .MediaBlock-media {
+                background-image: url('/Media/VIV/images/seguro-viagem/viv-detail-media-02-temp.jpg');
+            }
+        }
+
+        &Surfing {
+            .MediaBlock-media {
+                background-image: url('/Media/VIV/images/seguro-viagem/viv-detail-media-03-temp.jpg');
+            }
+        }
+
+        &Skiing {
+            .MediaBlock-media {
+                background-image: url('/Media/VIV/images/seguro-viagem/viv-detail-media-04-temp.jpg');
+            }
+        }
+
+        &List {
+            position: relative;
+            margin-bottom: 10px;
+            padding-left: 60px;
+
+            // Icons
+            &.has-icon-sprite {
+                &:before {
+                    top: -6px;
+                    bottom: auto;
+                }
+            }
+
+            > ul {
+                list-style: none;
+                margin-left: 0;
+                padding-left: 0;
+            }
+        }
+
+        &Accidents {
+            &:before {
+                background-position: -50px -50px;
+            }
+        }
+
+        &Problems {
+            &:before {
+                background-position: -100px -50px;
+            }
+        }
+
+        &Cancelations {
+            &:before {
+                background-position: 0 -100px;
+            }
+        }
+    }
+
+    &-claims {
+        &Testimonial {
+            width: 100%;
+            margin-top: 30px;
+            font-size: 14px;
+            color: $color-white;
+
+            .MediaBlock-media,
+            .MediaBlock-detail {
+                padding: 20px;
+            }
+
+            .MediaBlock-media {
+                vertical-align: top;
+                background: url('/Media/VIV/images/seguro-viagem/viv-claims-testimonial-bg-temp.jpg') no-repeat center center;
+                background-size: cover;
+            }
+
+            .MediaBlock-detail {
+                width: 30%;
+                min-width: 200px;
+                background-color: opacify($color-dark-green, 0.5);
+            }
+
+            &Quotes {
+                &.has-icon-sprite {
+                    &:before {
+                        width: 54px;
+                        height: 21px;
+                        background-position: 0 -164px;
+                    }
+                }
+                position: relative;
+                display: inline-block;
+                width: 54px;
+                height: 21px;
+            }
+        }
+    }
+
+    &-sideColumn {
+        border-left: $default-border;
+
+        &Nav {
+            list-style: none;
+            margin-left: 0;
+        }
+    }
+
+    &-newsletter {
+        padding: 10px;
+        border-radius: 5px;
+        background-color: $color-dark-green;
+        color: $color-white;
+
+        &Title {
+            color: $color-white;
+        }
+
+        &Submit {
+            display: block;
+            margin: 0;
+            width: 100%;
+        }
+    }
+}

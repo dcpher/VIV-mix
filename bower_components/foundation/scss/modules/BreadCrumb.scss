@@ -1,0 +1,51 @@
+// Page or header breadcrumb module
+
+.BreadCrumb {
+    display: inline-block;
+
+    // Reverse colouring
+    &--alt {
+
+        > ul {
+            > li {
+                &:after {
+                    color: $color-orange;
+                }
+            }
+        }
+
+        .BreadCrumb-link {
+            color: $color-white;
+        }
+    }
+
+    > ul {
+        margin: 0;
+        padding-left: 0;
+        list-style: none;
+
+        > li {
+            display: inline-block;
+            font-size: 1rem;
+
+            &:last-child {
+                &:after {
+                    display: none;
+                }
+            }
+            &:after {
+                display: inline-block;
+                margin-left: 8px;
+                font-size: 14px;
+                content: '\232A';
+            }
+
+        }
+    }
+
+    &-link {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
