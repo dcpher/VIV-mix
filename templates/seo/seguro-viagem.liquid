@@ -1,6 +1,7 @@
 {% block title %}Seguro Viagem{% endblock %}
 {% block content %}
 
+<!-- Before QQW Section -->
 <section class="seguroViagem">
 
   <div class="seguroViagem-hero">
@@ -20,12 +21,21 @@
         <p class="seguroViagem-heroCopy">Um Seguro Viagem criado por pessoas que viajam assim como você. Nossos planos e coberturas garantem a sua tranquilidade enquanto você aproveita o melhor que o mundo tem a oferecer.</p>
       </div>
     </div>
-    <div class="seguroViagem-heroQqw">
-      <div class="qqw-alt">
-        {% include "qqw-static" %}
-      </div>
-    </div>
+    <div class="qqw-alt"></div>
+<!-- / Before QQW Section -->
+
+  {% include "qqw-static" %}
+
+<!-- After QQW Section -->
   </div>
+</section>
+
+<section class="seguroViagem">
+
+  <aside class="seguroViagem-underwriter">
+    <span class="seguroViagem-underwriterLabel">Subscrito pelo:</span>
+    <img src="/Media/VIV/images/seguro-viagem/viv-zurich-logo.png">
+  </aside>
 
   <aside class="seguroViagem-features">
     <div class="row">
@@ -50,7 +60,8 @@
 
   <section class="seguroViagem-details">
     <div class="row">
-      <div class="small-12 medium-9 columns">
+      <!-- Main Column -->
+      <div class="seguroViagem-mainCol small-12 medium-9 columns">
         <section class="seguroViagem-subSection">
           <h2>Planos e Cobertura</h2>
           <p class="seguroViagem-largeCopy">Um Seguro Viagem criado por pessoas que viajam assim como você. Nossos planos e coberturas garantem a sua tranquilidade enquanto você aproveita o melhor que o mundo tem a oferecer.</p>
@@ -188,9 +199,10 @@
           </div>
         </section>
       </div>
-      <aside class="seguroViagem-sideColumn small-12 medium-3 columns">
+      <!-- Side Column -->
+      <aside class="seguroViagem-sideCol small-12 medium-3 columns">
         <h3>Encontre nesta página:</h3>
-        <ul class="seguroViagem-sideColumnNav">
+        <ul class="seguroViagem-sideColNav">
           <li>
             <a href="#">Planos e Cobertura</a>
           </li>
@@ -210,8 +222,8 @@
         <div class="seguroViagem-newsletter">
           <h3 class="seguroViagem-newsletterTitle">Newsletter</h3>
           <p>Receba ofertas e informações exclusivas por e-mail</p>
-          <form>
-            <input type="email" placeholder="Digite seu e-mail...">
+          <form action="http://worldnomadsgroup.createsend.com/t/y/s/zhysy/" method="post" id="subForm">
+            <input id="fieldEmail" name="cm-zhysy-zhysy" type="email" required placeholder="Digite seu e-mail...">
             <button class="seguroViagem-newsletterSubmit button primary small" type="submit">Inscreva-se</button>
           </form>
         </div>
@@ -220,5 +232,6 @@
   </section>
 
 </section>
+<!-- / After QQW Section -->
 
 {% endblock %}

@@ -1,6 +1,7 @@
 // Vivamos Insurance Page
 
 .seguroViagem {
+    position: relative;
 
     $default-border: 1px solid darken($color-white, 10%);
 
@@ -8,6 +9,9 @@
         background-image: url('/Media/VIV/images/seguro-viagem/viv-insurancepage-sprite@2x.png');
         background-repeat: no-repeat;
         background-size: 185px 185px;
+        @media (-webkit-max-device-pixel-ratio: 1), (max-device-pixel-ratio: 1) {
+          background-image: url('/Media/VIV/images/seguro-viagem/viv-insurancepage-sprite.png');
+        }
     }
 
     &-largeCopy {
@@ -39,30 +43,88 @@
     // Hero section
 
     &-hero {
-        padding-top: 120px;
+        padding-top: 90px;
         padding-bottom: 40px;
-        background: url('/Media/VIV/images/seguro-viagem/seguro-viagem-hero-bg-temp.jpg') no-repeat center center;
-        background-size: cover;
+        background-color: $color-dark-green;
+        @media #{$medium-only} {
+            padding-bottom: 70px;
+        }
+        @media #{$medium-up} {
+            padding-top: 120px;
+            background: url('/Media/VIV/images/seguro-viagem/seguro-viagem-hero-bg-temp.jpg') no-repeat center center;
+            background-size: cover;
+        }
 
         &Title {
-            font-size: 58px;
             color: $color-white;
+            font-size: 46px;
             text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+            @media #{$medium-up} {
+                font-size: 58px;
+            }
         }
 
         &Copy {
             color: $color-white;
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
         }
+    }
 
-        &Qqw {
-            @media #{$large-up} {
-                margin-top: 30px;
-            }
+    // Quick Quote Widget section
+    .qqw-contained {
+        @media #{$medium-up} {
+            margin: 0 auto 20px;
+        }
+        @media #{$large-up} {
+            margin: 40px auto 60px;
+        }
+
+        #public-insurance-quote-editor {
+            margin-bottom: 0;
+        }
+
+        .green-panel {
+            padding: 0;
         }
     }
 
     // Features section
+
+    // Above QQW Snippet
+    &-underwriter {
+      position: absolute;
+      display: inline-block;
+      left: 12px;
+      top: -70px;
+      color: $color-white;
+      opacity: 0.6;
+      @media #{$medium-up} {
+        left: auto;
+        right: 14px;
+        opacity: 1;
+      }
+      @media #{$large-up} {
+        right: 20px;
+        top: -80px;
+      }
+
+      &Label {
+        display: none;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        @media #{$medium-up} {
+          display: inline-block
+        }
+      }
+
+      > img {
+        width: 80px;
+        margin-bottom: 2px;
+        vertical-align: bottom;
+        @media #{$medium-up} {
+          width: 98px;
+        }
+      }
+    }
 
     &-features {
         position: relative;
@@ -144,8 +206,15 @@
 
     // Details section
 
+    &-mainCol {
+        @media #{$medium-up} {
+            border-right: $default-border;
+        }
+    }
+
     &-details {
         margin-top: 40px;
+        margin-bottom: 80px;
 
         &Table {
             margin-top: 20px;
@@ -303,9 +372,7 @@
         }
     }
 
-    &-sideColumn {
-        border-left: $default-border;
-
+    &-sideCol {
         &Nav {
             list-style: none;
             margin-left: 0;

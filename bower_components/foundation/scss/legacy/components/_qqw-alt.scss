@@ -1,6 +1,6 @@
-// Custom override of the quick quote calculator for the home page
+// Override the quick quote calculator with the alternative style for CMS pages
 
-.qqw-alt {
+.qqw-alt + .qqw-contained {
 
     .green-panel {
         background-color: transparent;
@@ -79,7 +79,7 @@
 
         .qqc-field {
             #selected-destinations {
-                top: rem-calc(-50);
+                top: rem-calc(-42);
                 background-color: transparent;
             }
         }
