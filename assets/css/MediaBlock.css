@@ -1,0 +1,10 @@
+.MediaBlock {
+  display: table; }
+  .MediaBlock--vertical {
+    display: block; }
+    .MediaBlock--vertical .MediaBlock-media, .MediaBlock--vertical .MediaBlock-detail {
+      display: block; }
+  .MediaBlock-media, .MediaBlock-detail {
+    display: table-cell;
+    vertical-align: middle;
+    box-sizing: border-box; }
