@@ -4313,60 +4313,66 @@ th.hide-for-touch {
     background-color: #cbf5ff;
     border: 1px solid #00a9d0; }
 
-/* line 2, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_type.sass */
-p.lead {
-  font-size: 1.375rem;
-  line-height: 1.4; }
-/* line 5, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_type.sass */
-p.caption {
-  font-size: 0.875rem;
-  line-height: 1.1;
-  margin-top: 0.625rem; }
-/* line 9, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_type.sass */
-p strong {
-  font-weight: 500; }
+/* line 1, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_type.sass */
+p {
+  line-height: 1.8; }
+  /* line 2, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_type.sass */
+  p.lead {
+    font-size: 1.375rem;
+    line-height: 1.6; }
+  /* line 5, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_type.sass */
+  p.caption {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    margin-top: 0.625rem; }
+  /* line 9, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_type.sass */
+  p strong {
+    font-weight: 500; }
 
-/* line 13, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_type.sass */
+/* line 14, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_type.sass */
 ul li {
   margin-bottom: 0.75rem; }
 
-/* line 19, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_type.sass */
-h1.blue, h2.blue, h3.blue, h4.blue, h5.blue, div.blue, p.blue, b.blue, span.blue {
-  color: #00bae4; }
-/* line 21, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_type.sass */
-h1.dark-blue, h2.dark-blue, h3.dark-blue, h4.dark-blue, h5.dark-blue, div.dark-blue, p.dark-blue, b.dark-blue, span.dark-blue {
-  color: #005581; }
-/* line 23, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_type.sass */
-h1.green, h2.green, h3.green, h4.green, h5.green, div.green, p.green, b.green, span.green {
-  color: #5fc3b1; }
-/* line 25, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_type.sass */
-h1.dark-green, h2.dark-green, h3.dark-green, h4.dark-green, h5.dark-green, div.dark-green, p.dark-green, b.dark-green, span.dark-green {
-  color: #006266; }
-/* line 27, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_type.sass */
-h1.red, h2.red, h3.red, h4.red, h5.red, div.red, p.red, b.red, span.red {
-  color: #ed4338; }
-/* line 29, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_type.sass */
-h1.dark-red, h2.dark-red, h3.dark-red, h4.dark-red, h5.dark-red, div.dark-red, p.dark-red, b.dark-red, span.dark-red {
-  color: #89160e; }
-/* line 31, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_type.sass */
-h1.white, h2.white, h3.white, h4.white, h5.white, div.white, p.white, b.white, span.white {
-  color: #FFF; }
+/* line 18, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_type.sass */
+h1, h2, h3, h4, h5, div, p, b, span {
+  line-height: 1.3; }
+  /* line 20, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_type.sass */
+  h1.blue, h2.blue, h3.blue, h4.blue, h5.blue, div.blue, p.blue, b.blue, span.blue {
+    color: #00bae4; }
+  /* line 22, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_type.sass */
+  h1.dark-blue, h2.dark-blue, h3.dark-blue, h4.dark-blue, h5.dark-blue, div.dark-blue, p.dark-blue, b.dark-blue, span.dark-blue {
+    color: #005581; }
+  /* line 24, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_type.sass */
+  h1.green, h2.green, h3.green, h4.green, h5.green, div.green, p.green, b.green, span.green {
+    color: #5fc3b1; }
+  /* line 26, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_type.sass */
+  h1.dark-green, h2.dark-green, h3.dark-green, h4.dark-green, h5.dark-green, div.dark-green, p.dark-green, b.dark-green, span.dark-green {
+    color: #006266; }
+  /* line 28, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_type.sass */
+  h1.red, h2.red, h3.red, h4.red, h5.red, div.red, p.red, b.red, span.red {
+    color: #ed4338; }
+  /* line 30, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_type.sass */
+  h1.dark-red, h2.dark-red, h3.dark-red, h4.dark-red, h5.dark-red, div.dark-red, p.dark-red, b.dark-red, span.dark-red {
+    color: #89160e; }
+  /* line 32, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_type.sass */
+  h1.white, h2.white, h3.white, h4.white, h5.white, div.white, p.white, b.white, span.white {
+    color: #FFF; }
 
-/* line 34, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_type.sass */
+/* line 36, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_type.sass */
 ::-moz-selection {
   color: #FFF;
   background: #00bae4; }
 
-/* line 38, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_type.sass */
+/* line 40, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_type.sass */
 ::selection {
   color: #FFF;
   background: #00bae4; }
 
 @media only screen and (max-width: 40em) {
-  /* line 47, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_type.sass */
+  /* line 49, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_type.sass */
   h1, h2 {
     letter-spacing: -0.0625rem; }
-  /* line 50, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_type.sass */
+  /* line 52, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_type.sass */
   h3, h4 {
     letter-spacing: 0; } }
 
@@ -4797,11 +4803,13 @@ span.submit-arw:before {
 /* line 9, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_nav-bar.sass */
 nav .logo {
   height: 40px;
-  width: 154px; }
-/* line 13, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_nav-bar.sass */
+  width: 154px;
+  position: relative;
+  z-index: 1; }
+/* line 15, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_nav-bar.sass */
 nav .tab-bar-logo {
   margin-left: 1rem; }
-/* line 17, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_nav-bar.sass */
+/* line 19, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_nav-bar.sass */
 nav .menu-icon:hover {
   background-color: #006266;
   color: #FFF;
@@ -4810,21 +4818,21 @@ nav .menu-icon:hover {
   -ms-transition: background 0.2s linear;
   -o-transition: background 0.2s linear;
   transition: background 0.2s linear; }
-/* line 22, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_nav-bar.sass */
+/* line 24, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_nav-bar.sass */
 nav .tab-bar-section {
   padding-right: 0; }
-  /* line 26, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_nav-bar.sass */
+  /* line 28, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_nav-bar.sass */
   nav .tab-bar-section ul li {
     margin: 0; }
-    /* line 30, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_nav-bar.sass */
+    /* line 32, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_nav-bar.sass */
     nav .tab-bar-section ul li.sign-in a {
       font-weight: 500;
       color: #FFF; }
-      /* line 34, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_nav-bar.sass */
+      /* line 36, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_nav-bar.sass */
       nav .tab-bar-section ul li.sign-in a:not(.button):hover {
         color: #FFF;
         background-color: #00494d; }
-    /* line 38, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_nav-bar.sass */
+    /* line 40, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_nav-bar.sass */
     nav .tab-bar-section ul li a {
       color: #FFF;
       padding: 1.3125rem 0.875rem;
@@ -4834,7 +4842,7 @@ nav .tab-bar-section {
       -ms-transition: background 0.2s linear;
       -o-transition: background 0.2s linear;
       transition: background 0.2s linear; }
-    /* line 44, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_nav-bar.sass */
+    /* line 46, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_nav-bar.sass */
     nav .tab-bar-section ul li a:hover {
       background-color: #006266;
       color: #FFF; }
@@ -4842,25 +4850,25 @@ nav .tab-bar-section {
       nav .tab-bar-section ul li {
         background-color: #4d473b;
         border-bottom: 1px solid #3f3a30; }
-        /* line 51, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_nav-bar.sass */
+        /* line 53, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_nav-bar.sass */
         nav .tab-bar-section ul li a {
           color: #FFF; } }
   @media only screen and (min-width:40.063em) and (max-width:64em) {
-    /* line 55, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_nav-bar.sass */
+    /* line 57, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_nav-bar.sass */
     nav .tab-bar-section.right {
       right: 4.0625rem; } }
 
-/* line 60, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_nav-bar.sass */
+/* line 62, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_nav-bar.sass */
 aside.right-off-canvas-menu .off-canvas-list li {
   margin-bottom: 0; }
-  /* line 62, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_nav-bar.sass */
+  /* line 64, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_nav-bar.sass */
   aside.right-off-canvas-menu .off-canvas-list li.sign-in {
     font-weight: 500; }
-  /* line 64, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_nav-bar.sass */
+  /* line 66, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_nav-bar.sass */
   aside.right-off-canvas-menu .off-canvas-list li .logo {
     height: 40px;
     width: 154px; }
-  /* line 67, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_nav-bar.sass */
+  /* line 69, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_nav-bar.sass */
   aside.right-off-canvas-menu .off-canvas-list li:hover {
     background-color: #4d473b;
     color: #FFF;
@@ -4870,7 +4878,7 @@ aside.right-off-canvas-menu .off-canvas-list li {
     -o-transition: background 0.2s linear;
     transition: background 0.2s linear; }
 @media all and (max-width: 780px) and (min-width: 642px) {
-  /* line 73, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_nav-bar.sass */
+  /* line 75, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_nav-bar.sass */
   aside.right-off-canvas-menu.top-bar section.top-bar-section ul.right li a {
     padding: 0 0.5rem; } }
 
@@ -5135,9 +5143,8 @@ hr {
   border: 1px solid #c6c6c6;
   padding: 20px;
   margin-top: 20px;
-  margin-bottom: 20px;
-  min-height: 300px; }
-  /* line 38, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_seo-page.sass */
+  margin-bottom: 20px; }
+  /* line 37, /Users/pfellows/Documents/GIT/VIV-mix/bower_components/foundation/scss/legacy/components/_seo-page.sass */
   .emergency-boxes .fa {
     color: #5fc3b1; }
 
