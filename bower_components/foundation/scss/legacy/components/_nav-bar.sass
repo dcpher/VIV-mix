@@ -1,44 +1,47 @@
 // nav-bar
 
 nav
+  z-index: 1
   @media #{$small-up}
     position: absolute !important
     top: 0
     left: 0
     width: 100%
-  
+
   .logo
     height: 40px
     width: 154px
-    
+
   .tab-bar-logo
+    position: relative
+    z-index: 1
     margin-left: rem-calc(16px)
-  
-  // menu icon for medium and small  
+
+  // menu icon for medium and small
   .menu-icon
-    &:hover 
-      background-color: $color-dark-grey 
-      color: $color-white 
+    &:hover
+      background-color: $color-dark-grey
+      color: $color-white
       +transition
-  
+
   // Main Nav Styles for large screens
   .tab-bar-section
     padding-right: 0
-    
-    ul 
+
+    ul
       li
         margin: 0
-      
+
         &.sign-in
           a
             font-weight: 500
             color: $color-white
-            
+
             // set the sign in hover color to blue
             &:not(.button):hover
               color: $color-white
               background-color: darken($color-dark-green, 5%)
-              
+
         //transition effect for nav buttons
         a
           color: $color-white
@@ -46,24 +49,24 @@ nav
           height: rem-calc(65)
           +transition
 
-        a:hover 
-          background-color: $color-dark-grey 
+        a:hover
+          background-color: $color-dark-grey
           color: $color-white
-      
+
         // Menu backgroud colour override
         @media #{$small-only}
           background-color: $color-dark-grey
           border-bottom: 1px solid darken($color-dark-grey, 5)
           a
             color: $color-white
-      
+
     // indent nav bar to allow for offcanvas nav
     @media #{$medium-only}
       &.right
-        right: rem-calc(65) 
+        right: rem-calc(65)
 
 // offcanvas styling
-aside.right-off-canvas-menu 
+aside.right-off-canvas-menu
   .off-canvas-list
     li
       margin-bottom: 0
@@ -72,9 +75,9 @@ aside.right-off-canvas-menu
       .logo
         height: 40px
         width: 154px
-      &:hover 
-        background-color: $color-dark-grey 
-        color: $color-white 
+      &:hover
+        background-color: $color-dark-grey
+        color: $color-white
         +transition
 
   // TODO: Do this in the way Foundation would like us to
