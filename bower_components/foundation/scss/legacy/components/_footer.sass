@@ -35,8 +35,15 @@
             color: $color-light-grey
 
 #footer-legal
-  background-color: darken($color-dark-green,8)
+  background-color: $color-mid-green
   .legal p
     font-size: rem-calc(12)
     font-weight: 300
-    color: lighten($color-dark-green, 3)
+    text-align: center
+    color: $color-green
+
+  .legal a
+    color: $color-orange
+
+    &:hover
+      text-decoration: underline
